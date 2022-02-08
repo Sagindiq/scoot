@@ -1,0 +1,154 @@
+.header__container {
+    display: flex;
+    align-items: center;
+    margin-top: 34px;
+    margin-bottom: 33.44px;
+}
+
+.header__logo {
+    margin-right: 58px;
+    width: 108px;
+    height: 28px;
+}
+
+.header__list {
+    display: flex;
+    margin-right: 511px;
+}
+
+.header__item {
+    margin-right: 32px;
+}
+
+.header__item:last-child {
+    margin: 0;
+}
+
+// header burger
+
+.header__burger {
+  display: none;
+  border: 2px solid #000;
+  background-color: #fff;
+  padding: 8px 6px;
+  width: 32px;
+  height: 32px;
+
+  &::before,
+  &::after,
+  &-inner {
+    width: 100%;
+    height: 2px;
+    background-color: #000;
+    display: block;
+    margin-bottom: 3px;
+    transition: 0.2s ease all;
+    content: '';
+  }
+
+  &::after {
+    margin-bottom: 0;
+  }
+}
+
+.header__burger--opened {
+  position: relative;
+
+  & .header__burger-inner {
+    display: none;
+  }
+  
+  &::before,
+  &::after {
+    width: 16px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+  }
+  
+  &::after {
+    transform: translate(-50%, -50%) rotate(45deg);
+  }
+  
+  &::before {
+    margin-bottom: 0;
+    transform: translate(-50%, -50%) rotate(-45deg);
+  }
+}
+
+@media only screen and (max-width: $mobile) {
+  .header__burger {
+    display: block;  
+  }
+
+  .header__nav {
+    display: none;
+    height: calc(100vh - 72px);
+    background: #2C2830;
+    width: 100%;
+    padding: 40px 24px;
+    position: absolute;
+    left: 0;
+    top: 100%;
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .header__list {
+    display: block;
+    margin-right: 0;
+    margin-bottom: 24px;
+  }
+
+  .header__nav-item {
+    margin-right: 0;
+  }
+
+  .header__nav-link {
+    display: block;
+    font-size: 20px;
+    line-height: 40px;
+    letter-spacing: 1.36364px;
+    color: #fff;
+    text-align: center;
+  }
+
+  .header__view {
+    text-align: center;
+    border-color: #fff;
+    color: #fff;
+  }
+
+  .header__nav--opened {
+    display: flex;
+  }
+}
+
+
+@media only screen and (max-width:$tablet) {
+    .header__container {
+        max-width: 719px;
+        margin: 33px auto 33.44px auto;
+        padding: 0 15px;
+        display: flex;
+    }
+
+    .header__list {
+        display: flex;
+        margin-right: 94px;
+    }
+
+    .header__item:last-child {
+        margin: 0;
+    }   
+}
+
+@media only screen and (max-width: $mobile) {
+    .header__list {
+        display: none;
+    }
+    
+    .header__button {
+        display: none;
+    }
+}

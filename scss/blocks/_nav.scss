@@ -1,0 +1,9 @@
+.header__link {
+    @include space-mono(bold, 15px, 25px, $accent);
+
+    &:hover {
+        cursor: pointer;
+        color: $yellow-accent;
+        transition: 0.5s all;
+    }
+}

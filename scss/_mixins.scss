@@ -1,0 +1,7 @@
+@mixin space-mono ($fw, $fz, $lh, $color) {
+    font-family:'Space Mono', monospace;
+    font-weight: $fw;
+    font-size: $fz;
+    line-height: $lh;
+    color: $color;
+}
