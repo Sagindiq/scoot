@@ -203,6 +203,11 @@ ul {
 }
 
 @media only screen and (max-width: 768px) {
+  .header__container {
+    width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+  }
   .header__list {
     display: none;
   }
@@ -211,7 +216,7 @@ ul {
   }
   .header-logo-link {
     width: 75px;
-    margin: 22px 40% 22px 40%;
+    margin: 22px 40% 22px 98px;
   }
   .header__logo {
     width: 75px;
