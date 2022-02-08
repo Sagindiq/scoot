@@ -86,7 +86,7 @@ ul {
   transition: 0.5s all;
 }
 
-.header__link {
+.header__nav-link {
   font-family: 'Space Mono', monospace;
   font-weight: bold;
   font-size: 15px;
@@ -94,7 +94,7 @@ ul {
   color: #939CAA;
 }
 
-.header__link:hover {
+.header__nav-link:hover {
   cursor: pointer;
   color: #FCB72B;
   -webkit-transition: 0.5s all;
@@ -125,21 +125,40 @@ ul {
   margin-right: 511px;
 }
 
-.header__item {
+.header__nav-item {
   margin-right: 32px;
 }
 
-.header__item:last-child {
+.header__nav-item:last-child {
   margin: 0;
+}
+
+@media only screen and (max-width: 1136px) {
+  .header__container {
+    max-width: 719px;
+    margin: 33px auto 33.44px auto;
+    padding: 0 15px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .header__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-right: 94px;
+  }
+  .header__nav-item:last-child {
+    margin: 0;
+  }
 }
 
 .header__burger {
   display: none;
-  border: 2px solid #000;
+  border: none;
   background-color: #fff;
-  padding: 8px 6px;
-  width: 32px;
-  height: 32px;
+  width: 19px;
+  height: 19px;
 }
 
 .header__burger::before, .header__burger::after, .header__burger-inner {
@@ -184,8 +203,23 @@ ul {
 }
 
 @media only screen and (max-width: 768px) {
+  .header__list {
+    display: none;
+  }
+  .header__button {
+    display: none;
+  }
+  .header-logo-link {
+    width: 75px;
+    margin: 22px 40% 22px 40%;
+  }
+  .header__logo {
+    width: 75px;
+    height: 20px;
+  }
   .header__burger {
     display: block;
+    margin-left: 32px;
   }
   .header__nav {
     display: none;
@@ -229,35 +263,6 @@ ul {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-  }
-}
-
-@media only screen and (max-width: 1136px) {
-  .header__container {
-    max-width: 719px;
-    margin: 33px auto 33.44px auto;
-    padding: 0 15px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-  }
-  .header__list {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    margin-right: 94px;
-  }
-  .header__item:last-child {
-    margin: 0;
-  }
-}
-
-@media only screen and (max-width: 768px) {
-  .header__list {
-    display: none;
-  }
-  .header__button {
-    display: none;
   }
 }
 /*# sourceMappingURL=main.css.map */
