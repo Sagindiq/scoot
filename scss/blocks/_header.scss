@@ -93,11 +93,7 @@
 
 @media only screen and (max-width: $mobile) {
 
-    .header__container {
-        width: 400px;
-        margin-left: auto;
-        margin-right: auto;
-    }
+    
 
     .header__list {
         display: none;
@@ -109,7 +105,7 @@
 
     .header-logo-link {
         width: 75px;
-        margin: 22px 40% 22px 98px;
+        margin: 22px 40% 22px 40%;
     }
 
     .header__logo {
@@ -124,13 +120,15 @@
 
     .header__nav {
         display: none;
-        height: calc(100vh - 72px);
+        height: 603px;
+        margin-left: 12%;
+        margin-right: auto;
         background: #2C2830;
-        width: 100%;
+        width: 256px;
         padding: 40px 24px;
         position: absolute;
         left: 0;
-        top: 100%;
+        top: 150px;
         flex-direction: column;
         align-items: stretch;
     }
