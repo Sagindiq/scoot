@@ -898,6 +898,19 @@ ul {
     margin-right: 64px;
     margin-bottom: 56px;
   }
+  .circle {
+    position: absolute;
+    top: 135px;
+  }
+  .circle-left {
+    position: absolute;
+    top: 1140px;
+  }
+  .last-circle {
+    width: 445px;
+    height: 445px;
+    position: absolute;
+  }
   .benefits__content {
     width: 573px;
   }

@@ -195,7 +195,24 @@
         }
     }
 
-    .circle {}
+    .circle {
+        position: absolute;
+        top: 135px;
+    }
+
+    .circle-left {
+        position: absolute;
+        top: 1140px;
+    }
+
+    .last-circle {
+        width: 445px;
+        height: 445px;
+        background-color:
+        position: absolute;
+        background-color: #E5ECF4;
+        margin-bottom: 31px;
+    }
 
     .benefits__content {
         width: 573px;
@@ -233,4 +250,5 @@
         bottom:700px;
         right: -386px;
     }
+}
 }
