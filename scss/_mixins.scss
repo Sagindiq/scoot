@@ -5,3 +5,11 @@
     line-height: $lh;
     color: $color;
 }
+
+@mixin lexen-deca ($fw, $fz, $lh, $color) {
+    font-family: 'Lexend Deca', sans-serif;
+    font-weight: $fw;
+    font-size: $fz;
+    line-height: $lh;
+    color: $color;
+}

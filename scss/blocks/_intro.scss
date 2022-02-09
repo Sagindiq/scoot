@@ -1,0 +1,72 @@
+.intro {
+    background-image: url(../img/intro.jpg);
+    background-color: #4E5D74;
+    background-size: cover;
+    position: relative;
+
+    @media only screen and (-webkit-min-device-pixel-ratio: 2),
+    only screen and (min--moz-device-pixel-ratio: 2),
+    only screen and (-o-min-device-pixel-ratio: 2/1),
+    only screen and (min-device-pixel-ratio: 2),
+    only screen and (min-resolution: 192dpi),
+    only screen and (min-resolution: 2dppx) {
+        background-image: url(../img/intro@2x.jpg);
+        /* Retina-specific stuff here */
+    }
+}
+
+.intro::before {
+    display: inline-block;
+    width:202px;
+    height: 15px;
+    background-image: url(../img/intro-before.svg);
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 353px;
+}
+
+.intro::after {
+    display: inline-block;
+    width:447px;
+    height: 138px;
+    background-image: url(../img/intro-after.svg);
+    content: '';
+    position: absolute;
+    right: 335px;
+    top: 353px;
+}
+
+.intro__content {
+        padding:153px 0;
+        max-width:500px;
+    }
+
+    .intro__title {
+        padding:0;
+        margin: 0;
+        letter-spacing: -2.5px;
+        font-size: 56px;
+        line-height: 56px;
+        color: #FFF;
+        margin-bottom: 40px;
+    }
+
+    .intro__description {
+        @include lexen-deca (400, 15px, 25px, #fff);
+        margin-bottom: 40px;
+        margin-left: 95px;
+    }
+
+    .intro__button {
+        margin-left: 95px;
+    }
+
+    @media only screen and (max-width: $tablet) {
+        .intro {
+            display: none;
+            background-image: url(../../img/intro-tablet.jpg);
+            background-color: #4E5D74;
+            background-size: cover;
+        }
+    }

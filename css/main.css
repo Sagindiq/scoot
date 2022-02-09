@@ -3,6 +3,7 @@
   font-family: 'Space Mono';
   font-style: normal;
   font-weight: 400;
+  font-display: swap;
   src: local(""), url("../fonts/space-mono-v10-latin-regular.woff2") format("woff2"), url("../fonts/space-mono-v10-latin-regular.woff") format("woff");
   /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
@@ -12,7 +13,18 @@
   font-family: 'Space Mono';
   font-style: normal;
   font-weight: 700;
+  font-display: swap;
   src: local(""), url("../fonts/space-mono-v10-latin-700.woff2") format("woff2"), url("../fonts/space-mono-v10-latin-700.woff") format("woff");
+  /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* lexend-deca-regular - latin */
+@font-face {
+  font-family: 'Lexend Deca';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local(""), url("../fonts/lexend-deca-v15-latin-regular.woff2") format("woff2"), url("../fonts/lexend-deca-v15-latin-regular.woff") format("woff");
   /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 
@@ -39,6 +51,8 @@
 body {
   margin: 0;
   padding: 0;
+  font-family: 'Space Mono', monospace;
+  font-weight: 700;
 }
 
 a {
@@ -79,6 +93,7 @@ ul {
   display: block;
   width: 181px;
   height: 53px;
+  cursor: pointer;
   background-color: #fff;
   color: #FCB72B;
   padding: 14px 39px;
@@ -210,7 +225,7 @@ ul {
     display: none;
   }
   .header-logo-link {
-    width: 75px;
+    min-width: 75px;
     margin: 22px 40% 22px 40%;
   }
   .header__logo {
@@ -220,14 +235,16 @@ ul {
   .header__burger {
     display: block;
     margin-left: 32px;
+    width: 18px;
+    height: 18px;
+    border: 5px;
   }
   .header__nav {
     display: none;
     height: 603px;
-    margin-left: 12%;
     margin-right: auto;
     background: #2C2830;
-    width: 256px;
+    min-width: 456px;
     padding: 40px 24px;
     position: absolute;
     left: 0;
@@ -265,6 +282,98 @@ ul {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-animation: mymove 1.5s both;
+            animation: mymove 1.5s both;
+  }
+  @-webkit-keyframes mymove {
+    from {
+      left: -280px;
+    }
+    to {
+      left: 0;
+    }
+  }
+  @keyframes mymove {
+    from {
+      left: -280px;
+    }
+    to {
+      left: 0;
+    }
+  }
+}
+
+.intro {
+  background-image: url(../img/intro.jpg);
+  background-color: #4E5D74;
+  background-size: cover;
+  position: relative;
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+  .intro {
+    background-image: url(../img/intro@2x.jpg);
+    /* Retina-specific stuff here */
+  }
+}
+
+.intro::before {
+  display: inline-block;
+  width: 202px;
+  height: 15px;
+  background-image: url(../img/intro-before.svg);
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 353px;
+}
+
+.intro::after {
+  display: inline-block;
+  width: 447px;
+  height: 138px;
+  background-image: url(../img/intro-after.svg);
+  content: '';
+  position: absolute;
+  right: 335px;
+  top: 353px;
+}
+
+.intro__content {
+  padding: 153px 0;
+  max-width: 500px;
+}
+
+.intro__title {
+  padding: 0;
+  margin: 0;
+  letter-spacing: -2.5px;
+  font-size: 56px;
+  line-height: 56px;
+  color: #FFF;
+  margin-bottom: 40px;
+}
+
+.intro__description {
+  font-family: 'Lexend Deca', sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 25px;
+  color: #fff;
+  margin-bottom: 40px;
+  margin-left: 95px;
+}
+
+.intro__button {
+  margin-left: 95px;
+}
+
+@media only screen and (max-width: 1136px) {
+  .intro {
+    display: none;
+    background-image: url(../../img/intro-tablet.jpg);
+    background-color: #4E5D74;
+    background-size: cover;
   }
 }
 /*# sourceMappingURL=main.css.map */
