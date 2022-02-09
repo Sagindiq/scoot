@@ -1,3 +1,8 @@
+.benefits {
+    position: relative;
+    overflow: hidden;
+}
+
 .benefits__container {
     margin-top: 200px;
 }
@@ -15,11 +20,31 @@
     margin-bottom: 160px;
 }
 
+.circle {
+    display: block;
+    width: 445px;
+    height: 445px;
+    background-color: #E5ECF4;
+    border-radius: 50%;
+    right: -314px;
+    position: absolute;
+}
+
+.circle-left {
+    display: block;
+    width: 445px;
+    height: 445px;
+    background-color: #E5ECF4;
+    border-radius: 50%;
+    left: -314px;
+    position: absolute;
+}
+
 .benefits__item-use {
     display: flex;
     flex-direction: row-reverse;
-    align-items: center;
     justify-content: space-between;
+    align-items: center;
 
     &::before {
         display: inline-block;
@@ -40,6 +65,17 @@
             background-image: url(../img/benefits-use@2x.jpg);
             /* Retina-specific stuff here */
         }
+    }
+
+    &::after {
+        display: inline-block;
+        width: 734px;
+        height: 150px;
+        background-image: url(../img/vector-left.svg);
+        content: '';
+        position: absolute;
+        right: 0;
+        top: 499px;
     }
 }
 
@@ -68,10 +104,21 @@
             /* Retina-specific stuff here */
         }
     }
+
+    &::after {
+        display: inline-block;
+        width: 734px;
+        height: 150px;
+        background-image: url(../img/vector-right.svg);
+        content: '';
+        position: absolute;
+        left: -348px;
+        top: 805px;
+    }
 }
 
 .benefits__item-payment {
-     display: flex;
+    display: flex;
     flex-direction: row-reverse;
     align-items: center;
     justify-content: space-between;
@@ -95,6 +142,17 @@
             /* Retina-specific stuff here */
         }
     }
+
+    &::after {
+        display: inline-block;
+        width: 734px;
+        height: 150px;
+        background-image: url(../img/vector-left.svg);
+        content: '';
+        position: absolute;
+        right: -355px;
+        bottom: 385px;
+    }
 }
 
 .benefit__title {
@@ -108,4 +166,71 @@
 .benefits__description {
     @include lexen-deca-p;
     margin-bottom: 40px;
+}
+
+@media only screen and (max-width: $tablet) {
+    .benefis {
+        position: relative;
+    }
+
+    .benefits__container {
+        width: 603px;
+        margin-top: 145px;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 0 15px;
+    }
+
+    .benefits__list {}
+
+    .benefits__item {
+        display: block;
+
+        &::before {
+            width: 445px;
+            height: 445px;
+            margin-left: 64px;
+            margin-right: 64px;
+            margin-bottom: 56px;
+        }
+    }
+
+    .circle {}
+
+    .benefits__content {
+        width: 573px;
+    }
+
+    .benefit__title {
+        letter-spacing: -2.14286px;
+        text-align: center;
+    }
+
+    .benefits__description {
+        text-align: center;
+    }
+
+    .benefits__button {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .benefits__item-use::after {
+        position: absolute;
+        top:452px;
+
+    }
+
+    .benefits__item-city::after {
+        position: absolute;
+        top:1150px;
+        left: -386px;
+    }
+
+    .benefits__item-payment::after {
+        position: absolute;
+        bottom:700px;
+        right: -386px;
+    }
 }
