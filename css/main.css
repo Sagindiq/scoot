@@ -440,7 +440,7 @@ ul {
     display: none;
   }
   .intro__container {
-    width: 100%;
+    width: 102%;
     background-image: url(../../img/intro-mobile.jpg);
     background-color: #4E5D74;
     background-size: cover;
