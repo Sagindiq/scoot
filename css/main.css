@@ -70,7 +70,7 @@ ul {
 }
 
 .container {
-  width: 1136px;
+  max-width: 1136px;
   margin: 0 auto;
 }
 
@@ -120,16 +120,25 @@ ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  margin-top: 34px;
+  margin-bottom: 33.44px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-top: 34px;
-  margin-bottom: 33.44px;
+}
+
+.header__nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .header__logo {
   margin-right: 58px;
-  width: 108px;
+  width: 107px;
   height: 28px;
 }
 
@@ -174,6 +183,7 @@ ul {
   background-color: #fff;
   width: 19px;
   height: 19px;
+  border-radius: 6px;
 }
 
 .header__burger::before, .header__burger::after, .header__burger-inner {
@@ -184,6 +194,7 @@ ul {
   margin-bottom: 3px;
   -webkit-transition: 0.2s ease all;
   transition: 0.2s ease all;
+  border-radius: 5px;
   content: '';
 }
 
@@ -228,7 +239,11 @@ ul {
     display: none;
   }
   .header__button {
-    display: none;
+    display: block;
+    margin-top: 339px;
+    width: 192px;
+    margin-left: auto;
+    margin-right: auto;
   }
   .header-logo-link {
     min-width: 75px;
@@ -243,18 +258,18 @@ ul {
     margin-left: 32px;
     width: 18px;
     height: 18px;
-    border: 5px;
+    border-radius: 5px;
   }
   .header__nav {
     display: none;
     height: 603px;
     margin-right: auto;
     background: #2C2830;
-    width: 256px;
+    width: 70%;
     padding: 40px 24px;
     position: absolute;
     left: 0;
-    top: 150px;
+    top: 136px;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -279,21 +294,18 @@ ul {
     color: #fff;
     text-align: center;
   }
-  .header__view {
-    text-align: center;
-    border-color: #fff;
-    color: #fff;
-  }
   .header__nav--opened {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -webkit-animation: mymove 1.5s both;
             animation: mymove 1.5s both;
+    display: flex;
+    z-index: 1;
   }
   @-webkit-keyframes mymove {
     from {
-      left: -280px;
+      left: -68%;
     }
     to {
       left: 0;
@@ -301,7 +313,7 @@ ul {
   }
   @keyframes mymove {
     from {
-      left: -280px;
+      left: -68%;
     }
     to {
       left: 0;
@@ -327,7 +339,7 @@ ul {
   display: inline-block;
   width: 202px;
   height: 15px;
-  background-image: url(../img/intro-before.svg);
+  background-image: url(../img/intro-start-line.svg);
   content: '';
   position: absolute;
   left: 0;
@@ -338,7 +350,7 @@ ul {
   display: inline-block;
   width: 447px;
   height: 138px;
-  background-image: url(../img/intro-after.svg);
+  background-image: url(../img/intro-end-line.svg);
   content: '';
   position: absolute;
   right: 335px;
@@ -375,11 +387,104 @@ ul {
 }
 
 @media only screen and (max-width: 1136px) {
-  .intro {
+  .intro::after {
     display: none;
+  }
+  .intro__container {
+    width: 100%;
     background-image: url(../../img/intro-tablet.jpg);
     background-color: #4E5D74;
     background-size: cover;
+    position: relative;
+  }
+}
+
+@media only screen and (max-width: 1136px) and (-webkit-min-device-pixel-ratio: 2), only screen and (max-width: 1136px) and (min--moz-device-pixel-ratio: 2), only screen and (max-width: 1136px) and (min-device-pixel-ratio: 2), only screen and (max-width: 1136px) and (min-resolution: 192dpi), only screen and (max-width: 1136px) and (min-resolution: 2dppx) {
+  .intro__container {
+    background-image: url(../../img/intro-tablet@2x.jpg);
+    /* Retina-specific stuff here */
+  }
+  .intro__container::before {
+    display: inline-block;
+    width: 446px;
+    height: 138px;
+    background-image: url(../../img/intro-end-line.svg);
+    content: '';
+    position: absolute;
+    left: -127px;
+    bottom: 34px;
+  }
+}
+
+@media only screen and (max-width: 1136px) {
+  .intro__container .intro__content {
+    width: 573px;
+    margin: 0 auto;
+  }
+  .intro__container .intro__title {
+    text-align: center;
+  }
+  .intro__container .intro__description {
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 32px;
+  }
+  .intro__container .intro__button {
+    width: 181px;
+    margin: 0 auto;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .intro__container::before {
+    display: none;
+  }
+  .intro__container {
+    width: 100%;
+    background-image: url(../../img/intro-mobile.jpg);
+    background-color: #4E5D74;
+    background-size: cover;
+    position: relative;
+  }
+}
+
+@media only screen and (max-width: 768px) and (-webkit-min-device-pixel-ratio: 2), only screen and (max-width: 768px) and (min--moz-device-pixel-ratio: 2), only screen and (max-width: 768px) and (min-device-pixel-ratio: 2), only screen and (max-width: 768px) and (min-resolution: 192dpi), only screen and (max-width: 768px) and (min-resolution: 2dppx) {
+  .intro__container {
+    background-image: url(../../img/intro-mobile.jpg);
+    background-size: cover;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .intro__container::before {
+    display: inline-block;
+    width: 446px;
+    height: 138px;
+    background-image: url(../../img/intro-end-line.svg);
+    content: '';
+    position: absolute;
+    left: -312px;
+    bottom: 34px;
+  }
+  .intro__container .intro__content {
+    width: 311px;
+    margin: 0 auto;
+  }
+  .intro__container .intro__title {
+    font-size: 40px;
+    line-height: 40px;
+    /* or 100% */
+    text-align: center;
+    letter-spacing: -1.78571px;
+  }
+  .intro__container .intro__description {
+    font-size: 15px;
+    line-height: 25px;
+    text-align: center;
+  }
+  .intro__container .intro__button {
+    width: 181px;
+    margin: 0 auto;
   }
 }
 /*# sourceMappingURL=main.css.map */
