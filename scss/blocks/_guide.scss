@@ -1,0 +1,186 @@
+.guide {
+    margin-top: 160px;
+    position: relative;
+}
+
+.guide__list {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    &::before {
+        display: flex;
+        z-index: -2;
+        position: absolute;
+        width: 67.63%;
+        // 974px ni foizi 67%
+        height: 1px;
+        left: 0;
+        top: 41px;
+        border-bottom: 15px solid #E5ECF4;
+        content: '';
+    }
+}
+
+.guide__item {
+    width: 350px;
+    margin-right: auto;
+}
+
+.guide__app::before {
+    display: inline-block;
+    width: 96px;
+    height: 96px;
+    background-image: url(../img/app.svg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    border-radius: 50%;
+    background-color: $yellow-accent;
+    content: '';
+}
+
+.guide__scooter::before {
+    display: inline-block;
+    width: 96px;
+    height: 96px;
+    background-image: url(../img/scooter.svg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    border-radius: 50%;
+    background-color: $yellow-accent;
+    content: '';
+}
+
+.guide__ride::before {
+    display: inline-block;
+    width: 96px;
+    height: 96px;
+    background-image: url(../img/ride.svg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    border-radius: 50%;
+    background-color: $yellow-accent;
+    content: '';
+}
+
+.guide__item::before {
+    margin-bottom: 40px;
+    padding: 24px 32.80px 24px 29px;
+}
+
+.guide__title {
+    color: #495567;
+    font-size: 24px;
+    left: 28px;
+    margin-bottom: 27px;
+    text-align-last: left;
+    letter-spacing: -1.07143px;
+}
+
+.guide__description {
+    @include lexen-deca-p;
+    text-align-last: left;
+}
+
+@media only screen and (max-width: $tablet) {
+    .guide__list::before {
+        display: none;
+    }
+
+    .guide {
+        position: relative;
+    }
+
+    .guide__container {
+        margin-top: 122px;
+        width: 573px;
+        padding: 0 15px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .guide__list::before {
+        display: flex;
+        z-index: -2;
+        position: absolute;
+        height: 532px;
+        width: 1px;
+        left: 20%;
+        right: 80%;
+        top: -160px;
+        border-left: 15px solid #E5ECF4;
+        content: '';
+    }
+
+
+
+    .guide__list {
+        display: block;
+    }
+
+    .guide__item {
+        display: flex;
+        align-items: flex-start;
+    }
+
+    .guide__item::before {
+        display: inline-block;
+        margin: 0 79px 0 0;
+        width: 96px;
+        height: 96px;
+        padding: 24px 48px;
+    }
+
+    .guide__title {
+        width: 398px;
+    }
+
+    .guide__description {
+        width: 398px;
+        margin-bottom: 40px;
+    }
+
+    .last-desc {
+        margin-bottom: 0;
+    }
+
+}
+
+@media only screen and (max-width: $mobile) {
+    .guide__list::before {
+        display: none;
+    }
+
+    .guide__container {
+        width: 341px;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 0 15px;
+    }
+
+    .guide__item {
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .guide__item::before {
+        display: block;
+        width: 96px;
+        height: 96px;
+        margin-left: 30%;
+        margin-right: 30%;
+    }
+
+    .guide__title {
+        width: 311px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .guide__description {
+        width: 311px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}

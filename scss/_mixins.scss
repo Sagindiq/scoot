@@ -13,3 +13,11 @@
     line-height: $lh;
     color: $color;
 }
+
+@mixin lexen-deca-p {
+    font-family: 'Lexend Deca', sans-serif;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 25px;
+    color: #939CAA;
+}
