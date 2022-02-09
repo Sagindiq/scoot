@@ -1,0 +1,111 @@
+.benefits__container {
+    margin-top: 200px;
+}
+
+.benefits__list {
+    display: flex;
+    flex-flow: column;
+}
+
+.benefits__content {
+    width: 445px;
+}
+
+.benefits__item {
+    margin-bottom: 160px;
+}
+
+.benefits__item-use {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-between;
+
+    &::before {
+        display: inline-block;
+        width: 445px;
+        height: 445px;
+        background-image: url(../img/benefits-use.jpg);
+        content: '';
+        border-radius: 50%;
+
+        @media only screen and (-webkit-min-device-pixel-ratio: 2),
+        only screen and (min--moz-device-pixel-ratio: 2),
+        only screen and (-o-min-device-pixel-ratio: 2/1),
+        only screen and (min-device-pixel-ratio: 2),
+        only screen and (min-resolution: 192dpi),
+        only screen and (min-resolution: 2dppx) {
+
+            background-size: contain;
+            background-image: url(../img/benefits-use@2x.jpg);
+            /* Retina-specific stuff here */
+        }
+    }
+}
+
+.benefits__item-city {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+    &::before {
+        display: inline-block;
+        width: 445px;
+        height: 445px;
+        background-image: url(../img/benefits-city.jpg);
+        content: '';
+        border-radius: 50%;
+
+        @media only screen and (-webkit-min-device-pixel-ratio: 2),
+        only screen and (min--moz-device-pixel-ratio: 2),
+        only screen and (-o-min-device-pixel-ratio: 2/1),
+        only screen and (min-device-pixel-ratio: 2),
+        only screen and (min-resolution: 192dpi),
+        only screen and (min-resolution: 2dppx) {
+            background-image: url(../img/benefits-city@2x.jpg);
+            background-size: cover;
+            /* Retina-specific stuff here */
+        }
+    }
+}
+
+.benefits__item-payment {
+     display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-between;
+
+    &::before {
+        display: inline-block;
+        width: 445px;
+        height: 445px;
+        background-image: url(../img/benefits-payment.jpg);
+        content: '';
+        border-radius: 50%;
+
+        @media only screen and (-webkit-min-device-pixel-ratio: 2),
+        only screen and (min--moz-device-pixel-ratio: 2),
+        only screen and (-o-min-device-pixel-ratio: 2/1),
+        only screen and (min-device-pixel-ratio: 2),
+        only screen and (min-resolution: 192dpi),
+        only screen and (min-resolution: 2dppx) {
+            background-image: url(../img/benefits-payment@2x.jpg);
+            background-size: cover;
+            /* Retina-specific stuff here */
+        }
+    }
+}
+
+.benefit__title {
+    font-size: 48px;
+    left: 48px;
+    color: $black-accent;
+    letter-spacing: -2.14286px;
+    margin-bottom: 24px;
+}
+
+.benefits__description {
+    @include lexen-deca-p;
+    margin-bottom: 40px;
+}

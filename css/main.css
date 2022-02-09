@@ -666,16 +666,155 @@ ul {
     height: 96px;
     margin-left: 30%;
     margin-right: 30%;
+    margin-bottom: 24px;
   }
   .guide__title {
     width: 311px;
-    margin-left: auto;
-    margin-right: auto;
+    margin-left: 6%;
+    margin-right: 6%;
   }
   .guide__description {
     width: 311px;
     margin-left: auto;
     margin-right: auto;
   }
+}
+
+.benefits__container {
+  margin-top: 200px;
+}
+
+.benefits__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+}
+
+.benefits__content {
+  width: 445px;
+}
+
+.benefits__item {
+  margin-bottom: 160px;
+}
+
+.benefits__item-use {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.benefits__item-use::before {
+  display: inline-block;
+  width: 445px;
+  height: 445px;
+  background-image: url(../img/benefits-use.jpg);
+  content: '';
+  border-radius: 50%;
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+  .benefits__item-use::before {
+    background-size: contain;
+    background-image: url(../img/benefits-use@2x.jpg);
+    /* Retina-specific stuff here */
+  }
+}
+
+.benefits__item-city {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.benefits__item-city::before {
+  display: inline-block;
+  width: 445px;
+  height: 445px;
+  background-image: url(../img/benefits-city.jpg);
+  content: '';
+  border-radius: 50%;
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+  .benefits__item-city::before {
+    background-image: url(../img/benefits-city@2x.jpg);
+    background-size: cover;
+    /* Retina-specific stuff here */
+  }
+}
+
+.benefits__item-payment {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.benefits__item-payment::before {
+  display: inline-block;
+  width: 445px;
+  height: 445px;
+  background-image: url(../img/benefits-payment.jpg);
+  content: '';
+  border-radius: 50%;
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+  .benefits__item-payment::before {
+    background-image: url(../img/benefits-payment@2x.jpg);
+    background-size: cover;
+    /* Retina-specific stuff here */
+  }
+}
+
+.benefit__title {
+  font-size: 48px;
+  left: 48px;
+  color: #495567;
+  letter-spacing: -2.14286px;
+  margin-bottom: 24px;
+}
+
+.benefits__description {
+  font-family: 'Lexend Deca', sans-serif;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 25px;
+  color: #939CAA;
+  margin-bottom: 40px;
 }
 /*# sourceMappingURL=main.css.map */
