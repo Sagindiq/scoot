@@ -523,9 +523,11 @@ ul {
 .guide__item {
   width: 350px;
   margin-right: auto;
+  margin-top: 120px;
+  position: relative;
 }
 
-.guide__app::before {
+.guide--app::before {
   display: inline-block;
   width: 96px;
   height: 96px;
@@ -534,10 +536,13 @@ ul {
   background-position: center center;
   border-radius: 50%;
   background-color: #FCB72B;
+  position: absolute;
+  top: -120px;
+  left: 0;
   content: '';
 }
 
-.guide__scooter::before {
+.guide--scooter::before {
   display: inline-block;
   width: 96px;
   height: 96px;
@@ -546,10 +551,13 @@ ul {
   background-position: center center;
   border-radius: 50%;
   background-color: #FCB72B;
+  position: absolute;
+  top: -120px;
+  right: 59%;
   content: '';
 }
 
-.guide__ride::before {
+.guide--ride::before {
   display: inline-block;
   width: 96px;
   height: 96px;
@@ -557,12 +565,13 @@ ul {
   background-repeat: no-repeat;
   background-position: center center;
   border-radius: 50%;
+  position: absolute;
+  top: -120px;
   background-color: #FCB72B;
   content: '';
 }
 
 .guide__item::before {
-  margin-bottom: 40px;
   padding: 24px 32.80px 24px 29px;
 }
 
@@ -606,9 +615,9 @@ ul {
     position: absolute;
     height: 532px;
     width: 1px;
-    left: 20%;
-    right: 80%;
+    left: calc(423px - (1136px / 100px));
     top: -160px;
+    left: 18%;
     border-left: 15px solid #E5ECF4;
     content: '';
   }
@@ -616,12 +625,8 @@ ul {
     display: block;
   }
   .guide__item {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start;
+    margin-left: 175px;
+    position: relative;
   }
   .guide__item::before {
     display: inline-block;
@@ -629,9 +634,11 @@ ul {
     width: 96px;
     height: 96px;
     padding: 24px 48px;
+    position: absolute;
+    left: -54%;
   }
   .guide__title {
-    width: 398px;
+    text-align: center;
   }
   .guide__description {
     width: 398px;
@@ -728,6 +735,10 @@ ul {
   position: absolute;
 }
 
+.benefits-img {
+  border-radius: 50%;
+}
+
 .benefits__item-use {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -742,23 +753,6 @@ ul {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-}
-
-.benefits__item-use::before {
-  display: inline-block;
-  width: 445px;
-  height: 445px;
-  background-image: url(../img/benefits-use.jpg);
-  content: '';
-  border-radius: 50%;
-}
-
-@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
-  .benefits__item-use::before {
-    background-size: contain;
-    background-image: url(../img/benefits-use@2x.jpg);
-    /* Retina-specific stuff here */
-  }
 }
 
 .benefits__item-use::after {
@@ -780,29 +774,12 @@ ul {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-}
-
-.benefits__item-city::before {
-  display: inline-block;
-  width: 445px;
-  height: 445px;
-  background-image: url(../img/benefits-city.jpg);
-  content: '';
-  border-radius: 50%;
-}
-
-@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
-  .benefits__item-city::before {
-    background-image: url(../img/benefits-city@2x.jpg);
-    background-size: cover;
-    /* Retina-specific stuff here */
-  }
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .benefits__item-city::after {
@@ -824,29 +801,12 @@ ul {
   -webkit-box-direction: reverse;
       -ms-flex-direction: row-reverse;
           flex-direction: row-reverse;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-}
-
-.benefits__item-payment::before {
-  display: inline-block;
-  width: 445px;
-  height: 445px;
-  background-image: url(../img/benefits-payment.jpg);
-  content: '';
-  border-radius: 50%;
-}
-
-@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
-  .benefits__item-payment::before {
-    background-image: url(../img/benefits-payment@2x.jpg);
-    background-size: cover;
-    /* Retina-specific stuff here */
-  }
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .benefits__item-payment::after {
@@ -910,6 +870,8 @@ ul {
     width: 445px;
     height: 445px;
     position: absolute;
+    background-color: #E5ECF4;
+    margin-bottom: 31px;
   }
   .benefits__content {
     width: 573px;

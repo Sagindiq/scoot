@@ -40,32 +40,16 @@
     position: absolute;
 }
 
+.benefits-img {
+    border-radius: 50%;
+
+}
+
 .benefits__item-use {
     display: flex;
     flex-direction: row-reverse;
     justify-content: space-between;
     align-items: center;
-
-    &::before {
-        display: inline-block;
-        width: 445px;
-        height: 445px;
-        background-image: url(../img/benefits-use.jpg);
-        content: '';
-        border-radius: 50%;
-
-        @media only screen and (-webkit-min-device-pixel-ratio: 2),
-        only screen and (min--moz-device-pixel-ratio: 2),
-        only screen and (-o-min-device-pixel-ratio: 2/1),
-        only screen and (min-device-pixel-ratio: 2),
-        only screen and (min-resolution: 192dpi),
-        only screen and (min-resolution: 2dppx) {
-
-            background-size: contain;
-            background-image: url(../img/benefits-use@2x.jpg);
-            /* Retina-specific stuff here */
-        }
-    }
 
     &::after {
         display: inline-block;
@@ -80,30 +64,11 @@
 }
 
 .benefits__item-city {
+
     display: flex;
     flex-direction: row;
-    align-items: center;
     justify-content: space-between;
-
-    &::before {
-        display: inline-block;
-        width: 445px;
-        height: 445px;
-        background-image: url(../img/benefits-city.jpg);
-        content: '';
-        border-radius: 50%;
-
-        @media only screen and (-webkit-min-device-pixel-ratio: 2),
-        only screen and (min--moz-device-pixel-ratio: 2),
-        only screen and (-o-min-device-pixel-ratio: 2/1),
-        only screen and (min-device-pixel-ratio: 2),
-        only screen and (min-resolution: 192dpi),
-        only screen and (min-resolution: 2dppx) {
-            background-image: url(../img/benefits-city@2x.jpg);
-            background-size: cover;
-            /* Retina-specific stuff here */
-        }
-    }
+    align-items: center;
 
     &::after {
         display: inline-block;
@@ -118,30 +83,12 @@
 }
 
 .benefits__item-payment {
+
     display: flex;
     flex-direction: row-reverse;
-    align-items: center;
     justify-content: space-between;
+    align-items: center;
 
-    &::before {
-        display: inline-block;
-        width: 445px;
-        height: 445px;
-        background-image: url(../img/benefits-payment.jpg);
-        content: '';
-        border-radius: 50%;
-
-        @media only screen and (-webkit-min-device-pixel-ratio: 2),
-        only screen and (min--moz-device-pixel-ratio: 2),
-        only screen and (-o-min-device-pixel-ratio: 2/1),
-        only screen and (min-device-pixel-ratio: 2),
-        only screen and (min-resolution: 192dpi),
-        only screen and (min-resolution: 2dppx) {
-            background-image: url(../img/benefits-payment@2x.jpg);
-            background-size: cover;
-            /* Retina-specific stuff here */
-        }
-    }
 
     &::after {
         display: inline-block;
@@ -208,7 +155,6 @@
     .last-circle {
         width: 445px;
         height: 445px;
-        background-color:
         position: absolute;
         background-color: #E5ECF4;
         margin-bottom: 31px;
@@ -250,5 +196,5 @@
         bottom:700px;
         right: -386px;
     }
-}
+    
 }

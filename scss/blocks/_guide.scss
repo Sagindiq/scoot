@@ -25,9 +25,11 @@
 .guide__item {
     width: 350px;
     margin-right: auto;
+    margin-top: 120px;
+    position: relative;
 }
 
-.guide__app::before {
+.guide--app::before {
     display: inline-block;
     width: 96px;
     height: 96px;
@@ -36,10 +38,13 @@
     background-position: center center;
     border-radius: 50%;
     background-color: $yellow-accent;
+    position: absolute;
+    top: -120px;
+    left: 0;
     content: '';
 }
 
-.guide__scooter::before {
+.guide--scooter::before {
     display: inline-block;
     width: 96px;
     height: 96px;
@@ -48,10 +53,13 @@
     background-position: center center;
     border-radius: 50%;
     background-color: $yellow-accent;
+    position: absolute;
+    top: -120px;;
+    right: 59%;
     content: '';
 }
 
-.guide__ride::before {
+.guide--ride::before {
     display: inline-block;
     width: 96px;
     height: 96px;
@@ -59,12 +67,13 @@
     background-repeat: no-repeat;
     background-position: center center;
     border-radius: 50%;
+    position: absolute;
+    top: -120px;
     background-color: $yellow-accent;
     content: '';
 }
 
 .guide__item::before {
-    margin-bottom: 40px;
     padding: 24px 32.80px 24px 29px;
 }
 
@@ -105,9 +114,9 @@
         position: absolute;
         height: 532px;
         width: 1px;
-        left: 20%;
-        right: 80%;
+        left: calc(423px - (1136px / 100px));
         top: -160px;
+        left:18%;
         border-left: 15px solid #E5ECF4;
         content: '';
     }
@@ -119,8 +128,8 @@
     }
 
     .guide__item {
-        display: flex;
-        align-items: flex-start;
+        margin-left: 175px;
+        position: relative;
     }
 
     .guide__item::before {
@@ -129,10 +138,12 @@
         width: 96px;
         height: 96px;
         padding: 24px 48px;
+        position: absolute;
+        left: -54%;
     }
 
     .guide__title {
-        width: 398px;
+        text-align: center;
     }
 
     .guide__description {
