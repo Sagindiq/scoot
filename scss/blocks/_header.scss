@@ -59,11 +59,11 @@
     &::after,
     &-inner {
         width: 100%;
-        height: 2px;
-        background-color: #000;
+        height: 2.4px;
+        background-color: $yellow-accent;
         display: block;
         margin-bottom: 3px;
-        transition: 0.2s ease all;
+        transition: 0.5s ease all;
         border-radius: 5px;
         content: '';
     }
@@ -146,10 +146,9 @@
         padding: 40px 24px;
         position: absolute;
         left: 0;
-        top: 136px;
+        top: 137.5px;
         flex-direction: column;
         align-items: stretch;
-        animation: to-left 1.2s both;
     }
 
     .header__list {
