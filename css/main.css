@@ -454,6 +454,7 @@ ul {
     width: 100%;
     background-image: url(../img/intro-mobile.jpg);
     background-color: #4E5D74;
+    height: calc(100vh - 650px);
     background-size: cover;
     position: relative;
   }
