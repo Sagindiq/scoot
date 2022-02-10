@@ -18,7 +18,7 @@
 
 .benefits__item {
     margin-bottom: 160px;
-    
+
     &:last-child {
         margin-bottom: 0;
     }
@@ -47,6 +47,10 @@
 .benefits__img {
     margin: 0;
     border-radius: 50%;
+}
+
+.benefits__mobile-img {
+    display: none;
 }
 
 .benefits__item--use {
@@ -107,7 +111,7 @@
 }
 
 .benefits__title {
-    font-family:'Space Mono', monospace;
+    font-family: 'Space Mono', monospace;
     font-weight: bold;
     font-size: 48px;
     line-height: 48px;
@@ -124,13 +128,20 @@
 
 @media only screen and (max-width: $tablet) {
 
+    .benefits {
+        max-width: 768px;
+        margin-left: auto;
+        margin-right: auto;
+        position: relative;
+        overflow: hidden;
+    }
+
     .benefits__container {
-        width: 603px;
+        max-width: 603px;
         margin-top: 145px;
         margin-left: auto;
         margin-right: auto;
         padding: 0 15px;
-        overflow: hidden;
         position: relative;
     }
 
@@ -141,13 +152,23 @@
     }
 
     .circle {
+        display: block;
+        width: 445px;
+        height: 445px;
+        background-color: #E5ECF4;
+        border-radius: 50%;
+        right: -430px;
         position: absolute;
-        top: 135px;
     }
 
     .circle-left {
+        display: block;
+        width: 445px;
+        height: 445px;
+        background-color: #E5ECF4;
+        border-radius: 50%;
+        left: -430px;
         position: absolute;
-        top: 1140px;
     }
 
     .last-circle {
@@ -193,19 +214,114 @@
         position: relative;
 
         &::after {
-        position: absolute;
-        top: 0;
-        left: -490px;
-    }
+            position: absolute;
+            top: 0;
+            left: -490px;
+        }
     }
 
     .benefits__item--payment {
         position: relative;
 
         &::after {
-        position: absolute;
-        top: 75px;
-        right: -476px;
+            position: absolute;
+            top: 75px;
+            right: -476px;
+        }
     }
+}
+
+@media only screen and (max-width: $mobile) {
+    .benefits__img {
+        display: none;
+    }
+    .circle,
+    .circle-left {
+        display: none;
+    }
+
+    .benefits {
+        width: 375px;
+        margin-left: auto;
+        margin-right: auto;
+        overflow: hidden;
+
+        // benefits ga width berganimni sababi 375px dan keyin strelka svg qirqilishi uchun berdim yani overflow kereli joyda strelkani qirqishi uchun
+    }
+
+    .benefits__container {
+        width: 341px;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 0 15px;
+        position: relative;
+    }
+
+    .benefits__mobile-img {
+        display: block;
+        width: 311px;
+        height: 311px;
+        border-radius: 50%;
+    }
+
+    .benefits__list {}
+
+    .benefits__item {}
+
+    .benefits__item--use {}
+
+    .circle {}
+
+    .benefits__img {}
+
+    .benefits__content {
+        width: 311px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .benefits__title {
+        @include space-mono (bold, 32px, 32px, $black-accent);
+        letter-spacing: -1.42857px;
+        margin-bottom: 32px;
+        width: 311px;
+    }
+
+    .benefits__description {
+        margin-bottom: 32px;
+    }
+
+    .benefits__button {}
+
+    .every-button {}
+
+    .benefits__item--use {
+        position: relative;
+
+        &::after {
+            position: absolute;
+            top: 165px;
+            right: -420px;
+        }
+    }
+
+    .benefits__item--city {
+        position: relative;
+
+        &::after {
+            position: absolute;
+            top: 0;
+            left: -500px;
+        }
+    }
+
+    .benefits__item--payment {
+        position: relative;
+
+        &::after {
+            position: absolute;
+            top: 0;
+            right: -550px;
+        }
     }
 }
