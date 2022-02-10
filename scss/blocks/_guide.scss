@@ -3,6 +3,10 @@
     position: relative;
 }
 
+.guide__container {
+    overflow: hidden;
+}
+
 .guide__list {
     display: flex;
     align-items: center;
@@ -25,7 +29,6 @@
 .guide__item {
     width: 350px;
     margin-right: auto;
-    margin-top: 120px;
     position: relative;
 }
 
@@ -38,9 +41,6 @@
     background-position: center center;
     border-radius: 50%;
     background-color: $yellow-accent;
-    position: absolute;
-    top: -120px;
-    left: 0;
     content: '';
 }
 
@@ -53,9 +53,6 @@
     background-position: center center;
     border-radius: 50%;
     background-color: $yellow-accent;
-    position: absolute;
-    top: -120px;;
-    right: 59%;
     content: '';
 }
 
@@ -67,14 +64,13 @@
     background-repeat: no-repeat;
     background-position: center center;
     border-radius: 50%;
-    position: absolute;
-    top: -120px;
     background-color: $yellow-accent;
     content: '';
 }
 
 .guide__item::before {
     padding: 24px 32.80px 24px 29px;
+    margin-bottom: 40px;
 }
 
 .guide__title {
@@ -102,7 +98,7 @@
 
     .guide__container {
         margin-top: 122px;
-        width: 573px;
+        width: 600px;
         padding: 0 15px;
         margin-left: auto;
         margin-right: auto;
@@ -112,11 +108,11 @@
         display: flex;
         z-index: -2;
         position: absolute;
-        height: 532px;
+        height: 545px;
         width: 1px;
         left: calc(423px - (1136px / 100px));
         top: -160px;
-        left:18%;
+        left: 18%;
         border-left: 15px solid #E5ECF4;
         content: '';
     }
@@ -128,26 +124,26 @@
     }
 
     .guide__item {
-        margin-left: 175px;
-        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
     }
 
     .guide__item::before {
-        display: inline-block;
         margin: 0 79px 0 0;
         width: 96px;
         height: 96px;
         padding: 24px 48px;
-        position: absolute;
-        left: -54%;
     }
 
-    .guide__title {
-        text-align: center;
+    .guide__content {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
     }
 
     .guide__description {
-        width: 398px;
         margin-bottom: 40px;
     }
 
@@ -169,32 +165,42 @@
         padding: 0 15px;
     }
 
+    .guide__list {
+        display: flex;
+        flex-direction: column;
+    }
+
     .guide__item {
         display: flex;
         flex-direction: column;
-
     }
 
     .guide__item::before {
-        display: block;
+        margin: 0 0 24px 0;
         width: 96px;
         height: 96px;
-        margin-left: 30%;
-        margin-right: 30%;
-        margin-bottom: 24px;
+        padding: 24px 48px;
+    }
+
+    .guide__content {
+        width: 100% !important;
+        margin-left: auto;
+        margin-right: auto;
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center !important;
     }
 
     .guide__title {
-        width: 311px;
-        margin-left: 6%;
-        margin-right: 6%;
+        text-align: center !important;
     }
-
-    // qayerdadir muammo bor shuni topa olmadim. shu narsa text-align ni ishlatishga xalaqit bervotti
 
     .guide__description {
-        width: 311px;
-        margin-left: auto;
-        margin-right: auto;
+        display: block;
+        font-size: 15px;
+        line-height: 25px;
+        text-align: center !important;
     }
+
+    // negadir description ga text-align center tasir qilmayapti
 }

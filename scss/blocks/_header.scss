@@ -149,8 +149,7 @@
         top: 136px;
         flex-direction: column;
         align-items: stretch;
-        // transform: translateX(100%);
-        // transition: transform 8s;
+        animation: to-left 1.2s both;
     }
 
     .header__list {
@@ -174,14 +173,13 @@
 
     .header__nav--opened {
         display: flex;
-        // transform: translateX(100%);
-        animation: mymove 1.5s both;
+        animation: to-right 1.2s both;
         display: flex;
         z-index: 1;
         
     }
 
-    @keyframes mymove  {
+    @keyframes to-right  {
   from {left: -68%;}
   to {left: 0;}
 }
