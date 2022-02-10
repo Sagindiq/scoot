@@ -139,7 +139,7 @@
 
     .header__nav {
         display: none;
-        height: 676px;
+        height: calc(100vh - 650px);
         margin-right: auto;
         background: #2C2830;
         width: 70%;
