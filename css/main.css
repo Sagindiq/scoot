@@ -1215,7 +1215,7 @@ ul {
     position: relative !important;
   }
   .cta__overflow {
-    width: 395px;
+    width: 398px;
     height: 320px;
     margin-left: auto;
     margin-right: auto;
@@ -1272,7 +1272,7 @@ ul {
     content: '';
     position: absolute;
     top: 50px;
-    left: -210px;
+    left: -205px;
   }
   .cta__circle::after {
     display: inline-block;
@@ -1286,7 +1286,7 @@ ul {
     border-radius: 50%;
     content: '';
     position: absolute;
-    top: -22px;
+    top: -19px;
     right: 400px;
   }
 }
