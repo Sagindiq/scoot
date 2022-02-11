@@ -132,7 +132,7 @@
     }
     .cta {
         height: 320px;
-        width: 107%;
+        max-width: 375px;
         background-size: cover;
         position: relative !important;
     }
