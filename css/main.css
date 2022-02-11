@@ -1022,7 +1022,6 @@ ul {
     position: relative;
   }
   .benefits__mobile-img {
-    display: block;
     width: 311px;
     height: 311px;
     border-radius: 50%;
@@ -1158,5 +1157,49 @@ ul {
   position: absolute;
   top: -22px;
   right: 800px;
+}
+
+@media only screen and (max-width: 1136px) {
+  .cta {
+    height: 300px;
+    position: relative !important;
+  }
+  .cta__container {
+    width: 487px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 15px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .cta__title {
+    width: 457px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  .cta__app {
+    display: inline;
+  }
+  .cta__circle {
+    width: 347px;
+    height: 347px;
+    mix-blend-mode: normal;
+    opacity: 0.1;
+    border: 15px solid #E5ECF4;
+    -webkit-transform: matrix(-1, 0, 0, 1, 0, 0);
+            transform: matrix(-1, 0, 0, 1, 0, 0);
+    border-radius: 50%;
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 0;
+  }
 }
 /*# sourceMappingURL=main.css.map */

@@ -73,3 +73,46 @@
     top: -22px;
     right: 800px;
 }
+
+@media only screen and (max-width: $tablet) {
+
+    .cta {
+        height: 300px;
+        position: relative !important;
+    }
+
+    .cta__container {
+        width: 487px;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 0 15px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .cta__title {
+        width: 457px;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        margin-bottom: 40px;
+    }
+
+    .cta__app {
+        display: inline;
+    }
+
+    .cta__circle {
+        width: 347px;
+        height: 347px;
+        mix-blend-mode: normal;
+        opacity: 0.1;
+        border: 15px solid #E5ECF4;
+        transform: matrix(-1, 0, 0, 1, 0, 0);
+        border-radius: 50%;
+        content: '';
+        position: absolute;
+        top: 50%;
+        left: 0;
+    }
+}
