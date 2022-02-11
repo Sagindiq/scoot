@@ -451,19 +451,20 @@ ul {
   .intro__container::before {
     display: none !important;
   }
-  .intro__container {
-    width: 105.5%;
+  .intro {
+    width: 106%;
     height: 680px;
     background-image: url(../img/intro-mobile.jpg);
     background-color: #4E5D74;
     background-size: cover;
     background-repeat: no-repeat;
     position: relative;
+    overflow: hidden;
   }
 }
 
 @media only screen and (max-width: 767.9px) and (-webkit-min-device-pixel-ratio: 2), only screen and (max-width: 767.9px) and (min--moz-device-pixel-ratio: 2), only screen and (max-width: 767.9px) and (min-device-pixel-ratio: 2), only screen and (max-width: 767.9px) and (min-resolution: 192dpi), only screen and (max-width: 767.9px) and (min-resolution: 2dppx) {
-  .intro__container {
+  .intro {
     background-image: url(../img/intro-mobile@2x.jpg);
     background-size: cover;
     height: 680px;
@@ -471,23 +472,23 @@ ul {
 }
 
 @media only screen and (max-width: 767.9px) {
-  .intro__container .intro__content {
+  .intro .intro__content {
     width: 311px;
     margin: 0 auto;
   }
-  .intro__container .intro__title {
+  .intro .intro__title {
     font-size: 40px;
     line-height: 40px;
     /* or 100% */
     text-align: center;
     letter-spacing: -1.78571px;
   }
-  .intro__container .intro__description {
+  .intro .intro__description {
     font-size: 15px;
     line-height: 25px;
     text-align: center;
   }
-  .intro__container .intro__button {
+  .intro .intro__button {
     width: 181px;
     margin: 0 auto;
   }

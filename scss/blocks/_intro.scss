@@ -134,14 +134,15 @@
         display: none !important;
     }
 
-    .intro__container {
-        width: 105.5%;
+    .intro {
+        width: 106%;
         height: 680px;
         background-image: url(../img/intro-mobile.jpg);
         background-color: #4E5D74;
         background-size: cover;
         background-repeat: no-repeat;
         position: relative;
+        overflow: hidden;
 
         @media only screen and (-webkit-min-device-pixel-ratio: 2),
         only screen and (min--moz-device-pixel-ratio: 2),
