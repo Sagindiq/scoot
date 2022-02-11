@@ -54,7 +54,7 @@
     content: '';
     position: absolute;
     right: 386px;
-    top: -22px;
+    top: -20px;
 }
 
 .cta__circle::after {
@@ -70,7 +70,7 @@
     content: '';
 
     position: absolute;
-    top: -22px;
+    top: -20px;
     right: 800px;
 }
 
@@ -78,7 +78,15 @@
 
     .cta {
         height: 300px;
-        position: relative !important;
+        margin-top: 104px;
+    }
+
+    .cta__overflow {
+        width: 768px;
+        height: 300px;
+        margin-left: auto;
+        margin-right: auto;
+        overflow: hidden;  // for overflow hidden
     }
 
     .cta__container {
@@ -88,6 +96,7 @@
         padding: 0 15px;
         display: flex;
         flex-direction: column;
+        position: relative !important;
     }
 
     .cta__title {
@@ -98,21 +107,111 @@
         margin-bottom: 40px;
     }
 
-    .cta__app {
-        display: inline;
-    }
-
     .cta__circle {
+        display: block;
         width: 347px;
         height: 347px;
         mix-blend-mode: normal;
-        opacity: 0.1;
         border: 15px solid #E5ECF4;
         transform: matrix(-1, 0, 0, 1, 0, 0);
         border-radius: 50%;
         content: '';
         position: absolute;
         top: 50%;
-        left: 0;
+        left: -330px;
+
+        &::before {
+            position: absolute;
+        }
     }
+}
+
+@media only screen and (max-width: $mobile) {
+    .cta__circle {
+        display: none;
+    }
+    .cta {
+        height: 320px;
+        width: 107%;
+        background-size: cover;
+        position: relative !important;
+    }
+
+    .cta__overflow {
+        width: 395px;
+        height: 320px;
+        margin-left: auto;
+        margin-right: auto;
+        overflow: hidden;  // for overflow hidden
+    }
+
+    .cta__container {
+        width: 341px;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 0 15px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .cta__title {
+        width: 311px;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        font-size: 32px;
+        line-height: 32px;
+        margin-bottom: 40px;
+    }
+
+    .cta__applications {
+        width: 256.43px;
+        justify-content: space-between;
+    }
+
+    .cta__app-apptore {
+        width: 113.57px;
+        height: 40px;
+    }
+
+    .cta__app-playstore {
+        width: 130px;
+        height: 40px;
+    }
+
+    .cta__circle::before {
+        display: none;
+    }
+
+    .cta__circle {
+        display: block;
+        width: 347px;
+        height: 347px;
+        mix-blend-mode: normal;
+        border: 15px solid #E5ECF4;
+        transform: matrix(-1, 0, 0, 1, 0, 0);
+        border-radius: 50%;
+        content: '';
+        position: absolute;
+        top: 50px;
+        left: -195px;
+    }
+
+    .cta__circle::after {
+    display: inline-block;
+    position: absolute;
+    width: 347px;
+    height: 347px;
+
+    background: #E5ECF4;
+    mix-blend-mode: normal;
+    transform: matrix(-1, 0, 0, 1, 0, 0);
+    border-radius: 50%;
+    content: '';
+
+    position: absolute;
+    top: -22px;
+    right: 385px;
+}
+
 }

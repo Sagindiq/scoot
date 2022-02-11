@@ -132,7 +132,6 @@
         max-width: 768px;
         margin-left: auto;
         margin-right: auto;
-        position: relative;
         overflow: hidden;
     }
 
@@ -273,11 +272,13 @@
         letter-spacing: -1.42857px;
         margin-bottom: 32px;
         width: 311px;
+        letter-spacing: -1.42857px;
     }
 
     .benefits__button {
         margin-top: 32px;
     }
+    
     .benefits__item--use {
         position: relative;
 

@@ -3,9 +3,9 @@
     position: relative;
 }
 
-.guide__container {
-    overflow: hidden;
-}
+// .guide__container {
+//     overflow: hidden;
+// }
 
 .guide__list {
     display: flex;
@@ -94,27 +94,24 @@
         display: none;
     }
 
-    .guide {
-        position: relative;
-    }
-
     .guide__container {
         margin-top: 122px;
         width: 600px;
         padding: 0 15px;
         margin-left: auto;
         margin-right: auto;
+        position: relative;
     }
 
     .guide__list::before {
         display: flex;
         z-index: -2;
         position: absolute;
-        height: 545px;
+        height: 595px;
         width: 1px;
         left: calc(423px - (1136px / 100px));
         top: -160px;
-        left: 18%;
+        left: 55px;
         border-left: 15px solid #E5ECF4;
         content: '';
     }

@@ -47,7 +47,7 @@
 }
 
 .intro__title {
-    font-family:'Space Mono', monospace;
+    font-family: 'Space Mono', monospace;
     font-weight: bold;
     padding: 0;
     margin: 0;
@@ -75,12 +75,10 @@
         display: none;
     }
 
-    .intro__container {
+    .intro {
         background-image: url(../img/intro-tablet.jpg);
         background-color: #4E5D74;
-        height: calc(100vh - 650px);
         background-size: cover;
-        position: relative;
 
         @media only screen and (-webkit-min-device-pixel-ratio: 2),
         only screen and (min--moz-device-pixel-ratio: 2),
@@ -93,26 +91,30 @@
 
 
         }
+    }
 
-        .intro__content {
-            width: 573px;
-            margin: 0 auto;
-        }
+    .intro__container {
+        position: relative;
+    }
 
-        .intro__title {
-            text-align: center;
-        }
+    .intro__content {
+        width: 573px;
+        margin: 0 auto;
+    }
 
-        .intro__description {
-            margin: 0 auto;
-            text-align: center;
-            margin-bottom: 32px;
-        }
+    .intro__title {
+        text-align: center;
+    }
 
-        .intro__button {
-            width: 181px;
-            margin: 0 auto;
-        }
+    .intro__description {
+        margin: 0 auto;
+        text-align: center;
+        margin-bottom: 32px;
+    }
+
+    .intro__button {
+        width: 181px;
+        margin: 0 auto;
     }
 
     .intro__container::after {
@@ -154,33 +156,31 @@
             background-size: cover;
             height: 680px;
         }
+    }
 
+    .intro__content {
+        width: 311px;
+        margin: 0 auto;
+    }
 
+    .intro__title {
+        font-size: 40px;
+        line-height: 40px;
+        /* or 100% */
 
-        .intro__content {
-            width: 311px;
-            margin: 0 auto;
-        }
+        text-align: center;
+        letter-spacing: -1.78571px;
+    }
 
-        .intro__title {
-            font-size: 40px;
-            line-height: 40px;
-            /* or 100% */
+    .intro__description {
+        font-size: 15px;
+        line-height: 25px;
+        text-align: center;
+    }
 
-            text-align: center;
-            letter-spacing: -1.78571px;
-        }
-
-        .intro__description {
-            font-size: 15px;
-            line-height: 25px;
-            text-align: center;
-        }
-
-        .intro__button {
-            width: 181px;
-            margin: 0 auto;
-        }
+    .intro__button {
+        width: 181px;
+        margin: 0 auto;
     }
 
     .intro__container::before {

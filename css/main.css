@@ -232,7 +232,7 @@ ul {
           transform: translate(-50%, -50%) rotate(-45deg);
 }
 
-@media only screen and (max-width: 767.9px) {
+@media only screen and (max-width: 766.99px) {
   .header__container {
     width: 400px;
     margin-left: auto;
@@ -401,36 +401,37 @@ ul {
   .intro__container::after {
     display: none;
   }
-  .intro__container {
+  .intro {
     background-image: url(../img/intro-tablet.jpg);
     background-color: #4E5D74;
-    height: calc(100vh - 650px);
     background-size: cover;
-    position: relative;
   }
 }
 
 @media only screen and (max-width: 1136px) and (-webkit-min-device-pixel-ratio: 2), only screen and (max-width: 1136px) and (min--moz-device-pixel-ratio: 2), only screen and (max-width: 1136px) and (min-device-pixel-ratio: 2), only screen and (max-width: 1136px) and (min-resolution: 192dpi), only screen and (max-width: 1136px) and (min-resolution: 2dppx) {
-  .intro__container {
+  .intro {
     background-image: url(../img/intro-tablet@2x.jpg);
     /* Retina-specific stuff here */
   }
 }
 
 @media only screen and (max-width: 1136px) {
-  .intro__container .intro__content {
+  .intro__container {
+    position: relative;
+  }
+  .intro__content {
     width: 573px;
     margin: 0 auto;
   }
-  .intro__container .intro__title {
+  .intro__title {
     text-align: center;
   }
-  .intro__container .intro__description {
+  .intro__description {
     margin: 0 auto;
     text-align: center;
     margin-bottom: 32px;
   }
-  .intro__container .intro__button {
+  .intro__button {
     width: 181px;
     margin: 0 auto;
   }
@@ -446,7 +447,7 @@ ul {
   }
 }
 
-@media only screen and (max-width: 767.9px) {
+@media only screen and (max-width: 766.99px) {
   .intro__container::after,
   .intro__container::before {
     display: none !important;
@@ -463,7 +464,7 @@ ul {
   }
 }
 
-@media only screen and (max-width: 767.9px) and (-webkit-min-device-pixel-ratio: 2), only screen and (max-width: 767.9px) and (min--moz-device-pixel-ratio: 2), only screen and (max-width: 767.9px) and (min-device-pixel-ratio: 2), only screen and (max-width: 767.9px) and (min-resolution: 192dpi), only screen and (max-width: 767.9px) and (min-resolution: 2dppx) {
+@media only screen and (max-width: 766.99px) and (-webkit-min-device-pixel-ratio: 2), only screen and (max-width: 766.99px) and (min--moz-device-pixel-ratio: 2), only screen and (max-width: 766.99px) and (min-device-pixel-ratio: 2), only screen and (max-width: 766.99px) and (min-resolution: 192dpi), only screen and (max-width: 766.99px) and (min-resolution: 2dppx) {
   .intro {
     background-image: url(../img/intro-mobile@2x.jpg);
     background-size: cover;
@@ -471,24 +472,24 @@ ul {
   }
 }
 
-@media only screen and (max-width: 767.9px) {
-  .intro .intro__content {
+@media only screen and (max-width: 766.99px) {
+  .intro__content {
     width: 311px;
     margin: 0 auto;
   }
-  .intro .intro__title {
+  .intro__title {
     font-size: 40px;
     line-height: 40px;
     /* or 100% */
     text-align: center;
     letter-spacing: -1.78571px;
   }
-  .intro .intro__description {
+  .intro__description {
     font-size: 15px;
     line-height: 25px;
     text-align: center;
   }
-  .intro .intro__button {
+  .intro__button {
     width: 181px;
     margin: 0 auto;
   }
@@ -507,10 +508,6 @@ ul {
 .guide {
   margin-top: 160px;
   position: relative;
-}
-
-.guide__container {
-  overflow: hidden;
 }
 
 .guide__list {
@@ -610,15 +607,13 @@ ul {
   .guide__list::before {
     display: none;
   }
-  .guide {
-    position: relative;
-  }
   .guide__container {
     margin-top: 122px;
     width: 600px;
     padding: 0 15px;
     margin-left: auto;
     margin-right: auto;
+    position: relative;
   }
   .guide__list::before {
     display: -webkit-box;
@@ -626,11 +621,11 @@ ul {
     display: flex;
     z-index: -2;
     position: absolute;
-    height: 545px;
+    height: 595px;
     width: 1px;
     left: calc(423px - (1136px / 100px));
     top: -160px;
-    left: 18%;
+    left: 55px;
     border-left: 15px solid #E5ECF4;
     content: '';
   }
@@ -673,7 +668,7 @@ ul {
   }
 }
 
-@media only screen and (max-width: 767.9px) {
+@media only screen and (max-width: 766.99px) {
   .guide__list::before {
     display: none;
   }
@@ -902,7 +897,6 @@ ul {
     max-width: 768px;
     margin-left: auto;
     margin-right: auto;
-    position: relative;
     overflow: hidden;
   }
   .benefits__container {
@@ -1000,7 +994,7 @@ ul {
   }
 }
 
-@media only screen and (max-width: 767.9px) {
+@media only screen and (max-width: 766.99px) {
   .circle,
   .circle-left {
     display: none;
@@ -1039,6 +1033,7 @@ ul {
     letter-spacing: -1.42857px;
     margin-bottom: 32px;
     width: 311px;
+    letter-spacing: -1.42857px;
   }
   .benefits__button {
     margin-top: 32px;
@@ -1138,7 +1133,7 @@ ul {
   content: '';
   position: absolute;
   right: 386px;
-  top: -22px;
+  top: -20px;
 }
 
 .cta__circle::after {
@@ -1153,14 +1148,21 @@ ul {
   border-radius: 50%;
   content: '';
   position: absolute;
-  top: -22px;
+  top: -20px;
   right: 800px;
 }
 
 @media only screen and (max-width: 1136px) {
   .cta {
     height: 300px;
-    position: relative !important;
+    margin-top: 104px;
+  }
+  .cta__overflow {
+    width: 768px;
+    height: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: hidden;
   }
   .cta__container {
     width: 487px;
@@ -1174,6 +1176,7 @@ ul {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    position: relative !important;
   }
   .cta__title {
     width: 457px;
@@ -1182,14 +1185,11 @@ ul {
     text-align: center;
     margin-bottom: 40px;
   }
-  .cta__app {
-    display: inline;
-  }
   .cta__circle {
+    display: block;
     width: 347px;
     height: 347px;
     mix-blend-mode: normal;
-    opacity: 0.1;
     border: 15px solid #E5ECF4;
     -webkit-transform: matrix(-1, 0, 0, 1, 0, 0);
             transform: matrix(-1, 0, 0, 1, 0, 0);
@@ -1197,7 +1197,97 @@ ul {
     content: '';
     position: absolute;
     top: 50%;
-    left: 0;
+    left: -330px;
+  }
+  .cta__circle::before {
+    position: absolute;
+  }
+}
+
+@media only screen and (max-width: 766.99px) {
+  .cta__circle {
+    display: none;
+  }
+  .cta {
+    height: 320px;
+    width: 107%;
+    background-size: cover;
+    position: relative !important;
+  }
+  .cta__overflow {
+    width: 395px;
+    height: 320px;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: hidden;
+  }
+  .cta__container {
+    width: 341px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 15px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .cta__title {
+    width: 311px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    font-size: 32px;
+    line-height: 32px;
+    margin-bottom: 40px;
+  }
+  .cta__applications {
+    width: 256.43px;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .cta__app-apptore {
+    width: 113.57px;
+    height: 40px;
+  }
+  .cta__app-playstore {
+    width: 130px;
+    height: 40px;
+  }
+  .cta__circle::before {
+    display: none;
+  }
+  .cta__circle {
+    display: block;
+    width: 347px;
+    height: 347px;
+    mix-blend-mode: normal;
+    border: 15px solid #E5ECF4;
+    -webkit-transform: matrix(-1, 0, 0, 1, 0, 0);
+            transform: matrix(-1, 0, 0, 1, 0, 0);
+    border-radius: 50%;
+    content: '';
+    position: absolute;
+    top: 50px;
+    left: -195px;
+  }
+  .cta__circle::after {
+    display: inline-block;
+    position: absolute;
+    width: 347px;
+    height: 347px;
+    background: #E5ECF4;
+    mix-blend-mode: normal;
+    -webkit-transform: matrix(-1, 0, 0, 1, 0, 0);
+            transform: matrix(-1, 0, 0, 1, 0, 0);
+    border-radius: 50%;
+    content: '';
+    position: absolute;
+    top: -22px;
+    right: 385px;
   }
 }
 /*# sourceMappingURL=main.css.map */
