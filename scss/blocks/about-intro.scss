@@ -1,11 +1,80 @@
 .about-intro {
-    height: 200px;
+    // height: 200px;
     background-image: url(../img/about-intro.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+
+    @media only screen and (-webkit-min-device-pixel-ratio: 2),
+    only screen and (min--moz-device-pixel-ratio: 2),
+    only screen and (-o-min-device-pixel-ratio: 2/1),
+    only screen and (min-device-pixel-ratio: 2),
+    only screen and (min-resolution: 192dpi),
+    only screen and (min-resolution: 2dppx) {
+        background-image: url(../img/about-intro@2x.jpg);
+        /* Retina-specific stuff here */
+    }
 }
 
 .about-intro__title {
-    margin-bottom: auto;
-    margin-top: auto;
+    padding-top: 72px;
+    padding-bottom: 72px;
+    letter-spacing: -2.5px;
+    @include space-mono (bold, 56px, 56px, #fff);
+}
+
+@media only screen and (max-width: $tablet) {
+    .about-intro {
+        background-image: url(../img/about-intro-tablet.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+
+        @media only screen and (-webkit-min-device-pixel-ratio: 2),
+        only screen and (min--moz-device-pixel-ratio: 2),
+        only screen and (-o-min-device-pixel-ratio: 2/1),
+        only screen and (min-device-pixel-ratio: 2),
+        only screen and (min-resolution: 192dpi),
+        only screen and (min-resolution: 2dppx) {
+            background-image: url(../img/about-intro-tablet@2x.jpg);
+            /* Retina-specific stuff here */
+        }
+    }
+
+    .about-intro__container {
+        width: 719px;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 0 15px;
+    }
+}
+
+@media only screen and(max-width: $mobile) {
+    .about-intro {
+        width: 107%;
+        background-image: url(../../img/about-intro-mobile.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+
+        @media only screen and (-webkit-min-device-pixel-ratio: 2),
+    only screen and (min--moz-device-pixel-ratio: 2),
+    only screen and (-o-min-device-pixel-ratio: 2/1),
+    only screen and (min-device-pixel-ratio: 2),
+    only screen and (min-resolution: 192dpi),
+    only screen and (min-resolution: 2dppx) {
+        background-image: url(../img/about-intro-mobile@2x.jpg);
+        /* Retina-specific stuff here */
+    }
+    }
+
+    .about-intro__container {
+        width: 341px;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 0 15px;
+    }
+
+    .about-intro__title {
+        text-align: center;
+        letter-spacing: -1.78571px;
+        @include space-mono(bold, 40px, 40px, #fff);
+    }
 }

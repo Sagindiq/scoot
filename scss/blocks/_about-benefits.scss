@@ -1,0 +1,274 @@
+.benefits {
+    overflow: hidden;
+}
+
+.benefits__container {
+    margin-top: 200px;
+    position: relative;
+}
+
+.benefits__list {
+    display: flex;
+    flex-flow: column;
+}
+
+.benefits__content {
+    width: 445px;
+}
+
+.benefits__item {
+    margin-bottom: 160px;
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+}
+
+.circle {
+    display: block;
+    width: 445px;
+    height: 445px;
+    background-color: #E5ECF4;
+    border-radius: 50%;
+    right: -509px;
+    position: absolute;
+}
+
+.circle-left {
+    display: block;
+    width: 445px;
+    height: 445px;
+    background-color: #E5ECF4;
+    border-radius: 50%;
+    left: -509px;
+    position: absolute;
+}
+
+.benefits__img {
+    margin: 0;
+    border-radius: 50%;
+}
+
+.benefits__mobile-img {
+    display: none;
+}
+
+.benefits__item--phone {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+
+    &::after {
+        display: inline-block;
+        width: 734px;
+        height: 150px;
+        background-image: url(../img/benefits-left.svg);
+        content: '';
+        position: absolute;
+        right: -165px;
+        bottom: 40px;
+    }
+}
+
+.benefits__item--urban {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+
+    &::after {
+        display: inline-block;
+        width: 734px;
+        height: 150px;
+        background-image: url(../img/vector-right.svg);
+        content: '';
+        position: absolute;
+        left: -550px;
+        top: 0;
+    }
+}
+
+
+.benefits__title {
+    font-family: 'Space Mono', monospace;
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 48px;
+    left: 48px;
+    color: $black-accent;
+    letter-spacing: -2.14286px;
+    margin-bottom: 24px;
+}
+
+.benefits__description {
+    @include lexen-deca-p;
+    margin-bottom: 40px;
+}
+
+@media only screen and (max-width: $tablet) {
+
+    .benefits {
+        max-width: 768px;
+        margin-left: auto;
+        margin-right: auto;
+        overflow: hidden;
+    }
+
+    .benefits__container {
+        max-width: 603px;
+        margin-top: 145px;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 0 15px;
+        position: relative;
+    }
+
+    .benefits__item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .circle {
+        display: block;
+        width: 445px;
+        height: 445px;
+        background-color: #E5ECF4;
+        border-radius: 50%;
+        right: -430px;
+        position: absolute;
+    }
+
+    .circle-left {
+        display: block;
+        width: 445px;
+        height: 445px;
+        background-color: #E5ECF4;
+        border-radius: 50%;
+        left: -430px;
+        position: absolute;
+    }
+
+    .last-circle {
+        width: 445px;
+        height: 445px;
+        position: absolute;
+        background-color: #E5ECF4;
+        margin-bottom: 31px;
+    }
+
+    .benefits__content {
+        width: 573px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .benefits__title {
+        margin: 0;
+        margin-top: 56px;
+        width: 457px;
+        letter-spacing: -2.14286px;
+        text-align: center;
+    }
+
+    .benefits__description {
+        text-align: center;
+        margin: 0;
+        margin-top: 40px;
+    }
+
+    .benefits__button {
+        margin-top: 40px;
+    }
+
+    .benefits__item--phone::after {
+        position: absolute;
+        top: 265px;
+        right: -95px;
+
+    }
+
+    .benefits__item--urban {
+        position: relative;
+
+        &::after {
+            position: absolute;
+            top: 0;
+            left: -480px;
+        }
+    }
+}
+
+@media only screen and (max-width: $mobile) {
+    .circle,
+    .circle-left {
+        display: none;
+    }
+
+    .benefits {
+        width: 375px;
+        margin-left: auto;
+        margin-right: auto;
+        overflow: hidden;
+
+        // benefits ga width berganimni sababi 375px dan keyin strelka svg qirqilishi uchun berdim yani overflow kereli joyda strelkani qirqishi uchun
+    }
+
+    .benefits__container {
+        width: 341px;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 0 15px;
+        position: relative;
+    }
+
+    .benefits__img {
+        display: block;
+        width: 311px;
+        height: 311px;
+        border-radius: 50%;
+        margin-bottom: 0;
+    }
+
+    .benefits__content {
+        width: 311px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .benefits__title {
+        @include space-mono (bold, 32px, 32px, $black-accent);
+        letter-spacing: -1.42857px;
+        margin-bottom: 32px;
+        width: 311px;
+        letter-spacing: -1.42857px;
+    }
+
+    .benefits__button {
+        margin-top: 32px;
+    }
+    
+    .benefits__item--phone {
+        position: relative;
+
+        &::after {
+            position: absolute;
+            top: 128px;
+            right: -415px;
+        }
+    }
+
+    .benefits__item--urban {
+        position: relative;
+
+        &::after {
+            position: absolute;
+            top: -8.4px;
+            left: -420px;
+        }
+    }
+}

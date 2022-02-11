@@ -1,12 +1,13 @@
 .about-intro {
-  height: 200px;
   background-image: url(../img/about-intro.jpg);
   background-repeat: no-repeat;
   background-size: cover;
 }
 
 .about-intro__title {
-  margin-bottom: auto;
-  margin-top: auto;
+  padding-top: 72px;
+  padding-bottom: 72px;
+  letter-spacing: -2.5px;
+  color: #FFFFFF;
 }
 /*# sourceMappingURL=about-intro.css.map */
