@@ -232,9 +232,6 @@
 }
 
 @media only screen and (max-width: $mobile) {
-    .benefits__img {
-        display: none;
-    }
     .circle,
     .circle-left {
         display: none;
@@ -257,7 +254,8 @@
         position: relative;
     }
 
-    .benefits__mobile-img {
+    .benefits__img {
+        display: block;
         width: 311px;
         height: 311px;
         border-radius: 50%;

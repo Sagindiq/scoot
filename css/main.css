@@ -1001,9 +1001,6 @@ ul {
 }
 
 @media only screen and (max-width: 767.9px) {
-  .benefits__img {
-    display: none;
-  }
   .circle,
   .circle-left {
     display: none;
@@ -1021,7 +1018,8 @@ ul {
     padding: 0 15px;
     position: relative;
   }
-  .benefits__mobile-img {
+  .benefits__img {
+    display: block;
     width: 311px;
     height: 311px;
     border-radius: 50%;
