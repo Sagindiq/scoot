@@ -58,8 +58,8 @@
     &::before,
     &::after,
     &-inner {
-        width: 100%;
-        height: 2.4px;
+        width: 21.69px;
+        height: 3.69px;
         background-color: $yellow-accent;
         display: block;
         margin-bottom: 3px;
@@ -101,7 +101,7 @@
 @media only screen and (max-width: $mobile) {
 
     .header__container {
-        width: 375px;
+        width: 400px;
         margin-left: auto;
         margin-right: auto;
         padding: 0 15px;
@@ -120,7 +120,7 @@
     }
 
     .header-logo-link {
-        min-width: 75px;
+        width: 75.5px;
         margin: 22px auto 22px 100px;
     }
 
@@ -132,14 +132,14 @@
     .header__burger {
         display: block;
         margin-left: 32px;
-        width:18px;
+        width: 18px;
         height: 18px;
-        border-radius:5px;
+        border-radius: 5px;
     }
 
     .header__nav {
         display: none;
-        height: 650px;
+        height: 680px;
         margin-right: auto;
         background: #2C2830;
         width: 70%;
@@ -175,11 +175,16 @@
         animation: to-right 1.2s both;
         display: flex;
         z-index: 1;
-        
+
     }
 
-    @keyframes to-right  {
-  from {left: -68%;}
-  to {left: 0;}
-}
+    @keyframes to-right {
+        from {
+            left: -68%;
+        }
+
+        to {
+            left: 0;
+        }
+    }
 }
