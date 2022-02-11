@@ -1415,4 +1415,16 @@ footer {
             justify-content: space-between;
   }
 }
+
+.about-intro {
+  height: 200px;
+  background-image: url(../img/about-intro.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.about-intro__title {
+  margin-left: auto;
+  margin-right: auto;
+}
 /*# sourceMappingURL=main.css.map */

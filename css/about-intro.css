@@ -1,0 +1,12 @@
+.about-intro {
+  height: 200px;
+  background-image: url(../img/about-intro.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.about-intro__title {
+  margin-bottom: auto;
+  margin-top: auto;
+}
+/*# sourceMappingURL=about-intro.css.map */
