@@ -1272,7 +1272,7 @@ ul {
     content: '';
     position: absolute;
     top: 50px;
-    left: -205px;
+    left: -210px;
   }
   .cta__circle::after {
     display: inline-block;
