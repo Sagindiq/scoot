@@ -134,12 +134,13 @@
         display: none !important;
     }
 
-    .intro {
-        width: 100%;
+    .intro__container {
+        width: 106%;
+        height: 680px;
         background-image: url(../img/intro-mobile.jpg);
         background-color: #4E5D74;
         background-size: cover;
-        height: 680px;
+        background-repeat: no-repeat;
         position: relative;
 
         @media only screen and (-webkit-min-device-pixel-ratio: 2),
