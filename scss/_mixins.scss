@@ -21,3 +21,10 @@
     line-height: 25px;
     color: #939CAA;
 }
+
+@mixin space-mono-title {
+    font-family:'Space Mono', monospace;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 48px;
+}
