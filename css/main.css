@@ -1272,7 +1272,7 @@ ul {
     content: '';
     position: absolute;
     top: 50px;
-    left: -195px;
+    left: -200px;
   }
   .cta__circle::after {
     display: inline-block;
@@ -1287,7 +1287,7 @@ ul {
     content: '';
     position: absolute;
     top: -22px;
-    right: 385px;
+    right: 390px;
   }
 }
 /*# sourceMappingURL=main.css.map */
