@@ -16,14 +16,30 @@
   width: 1px;
 }
 
+header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    padding-top: 34px;
+    padding-bottom: 34px;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #fff;
+    z-index: 5;
+}
+
 body {
     margin: 0;
+    margin-top: 93px;
     padding: 0;
     font-family: 'Lexend Deca', sans-serif;
     font-weight: normal;
     font-size: 15px;
     line-height: 25px;
     color: $black-accent;
+    margin-top: 40px;
 }
 
 a {

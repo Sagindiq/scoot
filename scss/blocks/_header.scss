@@ -1,7 +1,8 @@
+
 .header__container {
     display: flex;
-    margin-top: 34px;
-    margin-bottom: 33.44px;
+    margin-top: 0;
+    margin-bottom: 0;
     align-items: center;
 }
 
@@ -32,7 +33,7 @@
 @media only screen and (max-width:$tablet) {
     .header__container {
         max-width: 719px;
-        margin: 33px auto 33.44px auto;
+        margin: 0 auto;
         padding: 0 15px;
         display: flex;
     }
@@ -100,11 +101,15 @@
 
 @media only screen and (max-width: $mobile) {
 
+    header {
+        margin: 0 auto;
+        padding: 0;
+    }
+
     .header__container {
         width: 375px;
-        margin-left: auto;
-        margin-right: auto;
-        // padding: 0 15px;
+        margin: 0 auto;
+        padding: 0 15px;
     }
 
     .header__list {
@@ -146,7 +151,7 @@
         padding: 40px 24px;
         position: absolute;
         left: 0;
-        top: 137.5px;
+        top: 71px;
         flex-direction: column;
         align-items: stretch;
     }

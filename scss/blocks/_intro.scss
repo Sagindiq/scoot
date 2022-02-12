@@ -79,6 +79,7 @@
         background-image: url(../img/intro-tablet.jpg);
         background-color: #4E5D74;
         background-size: cover;
+        height: 650px;
 
         @media only screen and (-webkit-min-device-pixel-ratio: 2),
         only screen and (min--moz-device-pixel-ratio: 2),
@@ -94,6 +95,7 @@
     }
 
     .intro__container {
+        margin-top: 137px;
         position: relative;
     }
 
@@ -138,7 +140,7 @@
 
     .intro {
         width: 100%;
-        height: 680px;
+        height: 650px;
         background-image: url(../img/intro-mobile.jpg);
         background-color: #4E5D74;
         background-size: cover;
@@ -159,6 +161,7 @@
     }
 
     .intro__content {
+        padding: 0;
         width: 311px;
         margin: 0 auto;
     }

@@ -1,9 +1,0 @@
-{
-    "version": 3,
-    "mappings": "AAAA,AAAA,YAAY,CAAC;EAET,gBAAgB,EAAE,2BAA2B;EAC7C,iBAAiB,EAAE,SAAS;EAC5B,eAAe,EAAE,KAAK;CACzB;;AAED,AAAA,mBAAmB,CAAC;EAChB,WAAW,EAAE,IAAI;EACjB,cAAc,EAAE,IAAI;EACpB,cAAc,EAAE,MAAM;EACtB,KAAK,EAAE,OAAO;CAEjB",
-    "sources": [
-        "../scss/blocks/about-intro.scss"
-    ],
-    "names": [],
-    "file": "about-intro.css"
-}
