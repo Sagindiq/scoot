@@ -255,7 +255,7 @@ footer {
   }
   .header-logo-link {
     width: 75.5px;
-    margin: 22px auto 22px 102px;
+    margin: 22px auto 22px 95px;
   }
   .header__logo {
     width: 75px;
@@ -457,7 +457,7 @@ footer {
     display: none !important;
   }
   .intro {
-    min-width: 377px;
+    width: 100%;
     height: 680px;
     background-image: url(../img/intro-mobile.jpg);
     background-color: #4E5D74;
@@ -1214,7 +1214,7 @@ footer {
   }
   .cta {
     height: 320px;
-    max-width: 375px;
+    width: 100%;
     background-size: cover;
     position: relative !important;
   }
