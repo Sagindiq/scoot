@@ -35,8 +35,12 @@
     margin-top: 1px;
 }
 
-.social__hover:hover {
-    fill: #E5ECF4;
+.footer__social-link {
+    color: $yellow-accent;
+
+    &:hover {
+        color: #fff;
+    }
 }
 
 @media only screen and(max-width: $tablet) {

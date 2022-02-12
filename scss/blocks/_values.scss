@@ -29,7 +29,7 @@
     background-color: $yellow-accent;
     position: absolute;
     letter-spacing: -1.07143px;
-    left: 35%;
+    left: 33.2%;
     top: 199px;
     color: #495567;
     padding: 34px;
@@ -113,6 +113,16 @@
         flex-direction: column;
         align-items: center;
     }
+
+    .values__img {
+    margin-left: 35px;
+    margin-bottom: 64px;
+}
+
+    .values__item::before {
+    position: absolute;
+    left: 33.5%;
+}
 
     .values__title {
         @include space-mono (bold, 32px, 32px, $black-accent);
