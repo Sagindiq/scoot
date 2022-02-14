@@ -760,6 +760,7 @@ footer {
 
 .benefits__container {
   margin-top: 200px;
+  margin-bottom: 307px;
   position: relative;
 }
 
@@ -930,6 +931,7 @@ footer {
     margin-top: 145px;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 104px;
     padding: 0 15px;
     position: relative;
   }
@@ -1040,6 +1042,7 @@ footer {
     width: 341px;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 120px;
     padding: 0 15px;
     position: relative;
   }
@@ -1181,7 +1184,6 @@ footer {
 @media only screen and (max-width: 1136px) {
   .cta {
     height: 300px;
-    margin-top: 104px;
   }
   .cta__overflow {
     width: 768px;
