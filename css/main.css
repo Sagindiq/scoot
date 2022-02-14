@@ -1096,15 +1096,10 @@ footer {
 .cta {
   background-color: #495567;
   padding: 64px 0;
-  margin-top: 307px;
   overflow: hidden;
 }
 
 .cta__container {
-  width: 1136px;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 0 15px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2021,11 +2016,7 @@ footer {
 }
 
 .faqs__container {
-  width: 1140px;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 0 15px;
-  margin-top: 120px;
+  margin: 120px auto 160px auto;
 }
 
 .faqs__title {
@@ -2158,6 +2149,7 @@ footer {
     margin-left: auto;
     margin-right: auto;
     padding: 0 15px;
+    margin-bottom: 120px;
   }
   .faqs__work,
   .faqs__safe {
@@ -2202,6 +2194,7 @@ footer {
     margin-left: auto;
     margin-right: auto;
     padding: 0 15px;
+    margin-top: 145px;
   }
   .faqs__title {
     font-size: 32px;

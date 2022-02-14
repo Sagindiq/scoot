@@ -1,11 +1,6 @@
 .faqs__container {
-    width: 1140px;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 0 15px;
-    margin-top: 120px;
+    margin: 120px auto 160px auto;
 }
-
 .faqs__title {
     @include space-mono (bold, 48px, 48px, $black-accent);
     text-align: center;
@@ -111,6 +106,7 @@
         margin-left: auto;
         margin-right: auto;
         padding: 0 15px;
+        margin-bottom: 120px;
     }
 
     .faqs__work,
@@ -156,6 +152,7 @@
         margin-left: auto;
         margin-right: auto;
         padding: 0 15px;
+        margin-top: 145px;
     }
 
     .faqs__title {
