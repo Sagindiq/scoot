@@ -1,4 +1,4 @@
-.every-button {
+.all-buttons {
     width: 185px;
     background-color: $yellow-accent;
     border: 3px solid $yellow-accent;
@@ -7,7 +7,7 @@
     box-sizing: border-box;
 }
 
-.every-button:hover {
+.all-buttons:hover {
     display: block;
     width: 185px;
     cursor: pointer;
@@ -15,4 +15,5 @@
     color: $yellow-accent;
     padding: 14px 39px;
     transition: 0.5s all;
+    box-sizing: border-box;
 }

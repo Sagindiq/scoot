@@ -98,7 +98,7 @@ footer {
   padding: 0 15px;
 }
 
-.every-button {
+.all-buttons {
   width: 185px;
   background-color: #FCB72B;
   border: 3px solid #FCB72B;
@@ -112,7 +112,7 @@ footer {
           box-sizing: border-box;
 }
 
-.every-button:hover {
+.all-buttons:hover {
   display: block;
   width: 185px;
   cursor: pointer;
@@ -121,6 +121,8 @@ footer {
   padding: 14px 39px;
   -webkit-transition: 0.5s all;
   transition: 0.5s all;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 .header__nav-link {
