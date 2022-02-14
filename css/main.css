@@ -1532,7 +1532,7 @@ footer {
   overflow: hidden;
 }
 
-.benefits__container {
+.about-benefits__container {
   margin-top: 200px;
   position: relative;
 }
@@ -1671,7 +1671,7 @@ footer {
     margin-right: auto;
     overflow: hidden;
   }
-  .benefits__container {
+  .about-benefits__container {
     max-width: 603px;
     margin-top: 145px;
     margin-left: auto;
@@ -1770,7 +1770,7 @@ footer {
     margin-right: auto;
     overflow: hidden;
   }
-  .benefits__container {
+  .about-benefits__container {
     width: 341px;
     margin-left: auto;
     margin-right: auto;
