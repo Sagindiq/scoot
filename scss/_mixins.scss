@@ -6,7 +6,7 @@
     color: $color;
 }
 
-@mixin lexen-deca ($fw, $fz, $lh, $color) {
+@mixin lexend-deca ($fw, $fz, $lh, $color) {
     font-family: 'Lexend Deca', sans-serif;
     font-weight: $fw;
     font-size: $fz;
@@ -14,7 +14,7 @@
     color: $color;
 }
 
-@mixin lexen-deca-p {
+@mixin lexend-deca-p {
     font-family: 'Lexend Deca', sans-serif;
     font-weight: normal;
     font-size: 15px;
