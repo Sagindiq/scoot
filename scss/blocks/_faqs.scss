@@ -47,13 +47,11 @@
 
 .faqs__button {
     @include space-mono (bold, 24px, 28px, $black-accent);
-    display: flex;
-    width: 650px;
-    justify-content: space-between;
-    align-items: center;
+    display: block;
     text-align: left;
     background-color: #F2F5F9;
     border: none;
+    position: relative;
 
     &::after {
         display: inline-block;
@@ -61,6 +59,9 @@
         height: 12px;
         background-image: url(../img/faqs-button.svg);
         content: '';
+        position: absolute;
+        top: 10px;
+        left: 634px;
     }
 }
 
@@ -71,47 +72,27 @@
     background-color: #F2F5F9;
 }
 
-.workActive--opened {
-    display: flex;
-    width: 650px;
-    justify-content: space-between;
-    align-items: center;
+.workActive--opened,
+.safeActive--opened {
+    display: block;
     margin-bottom: 24px;
+    position: relative;
 
     &::after {
-        display: inline-block;
-        width: 18.5px;
-        height: 12px;
-        background-image: url(../img/faqs-button.svg);
         transform: rotate(180deg);
+        position: absolute;
+        top: 10px;
+        left: 634px;
     }
 }
 
-.workActive--opened ~ .faqs__description {
+.workActive--opened~.faqs__description {
     display: block;
 }
 
-.safeActive--opened {
-    display: flex;
-    width: 650px;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 24px;
 
-    &::after {
-        display: inline-block;
-        width: 18.5px;
-        height: 12px;
-        background-image: url(../img/faqs-button.svg);
-        transform: rotate(180deg);
-    }
-}
 
-.safeActive--opened {
-    animation: to-top 1.4s;
-}
-
-.safeActive--opened ~ .faqs__description {
+.safeActive--opened~.faqs__description {
     display: block;
 }
 
@@ -146,7 +127,15 @@
         }
     }
 
-    .faqs__button,
+    .faqs__button {
+        position: relative;
+
+        &::after {
+            position: absolute;
+            left: 601px;
+        }
+    }
+
     .faqs__description {
         width: 617px;
     }
@@ -186,10 +175,15 @@
     }
 
     .faqs__button {
-        width: 251px;
+        width: 219px;
         font-size: 18px;
         line-height: 24px;
         letter-spacing: -0.803571px;
+        position: relative;
+
+        &::after {
+            left: 235px;
+        }
     }
 
     .faqs__description {

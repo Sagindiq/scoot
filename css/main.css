@@ -2085,19 +2085,11 @@ footer {
   font-size: 24px;
   line-height: 28px;
   color: #495567;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  width: 650px;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  display: block;
   text-align: left;
   background-color: #F2F5F9;
   border: none;
+  position: relative;
 }
 
 .faqs__button::after {
@@ -2106,6 +2098,9 @@ footer {
   height: 12px;
   background-image: url(../img/faqs-button.svg);
   content: '';
+  position: absolute;
+  top: 10px;
+  left: 634px;
 }
 
 .faqs__description {
@@ -2119,59 +2114,24 @@ footer {
   background-color: #F2F5F9;
 }
 
-.workActive--opened {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  width: 650px;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+.workActive--opened,
+.safeActive--opened {
+  display: block;
   margin-bottom: 24px;
+  position: relative;
 }
 
-.workActive--opened::after {
-  display: inline-block;
-  width: 18.5px;
-  height: 12px;
-  background-image: url(../img/faqs-button.svg);
+.workActive--opened::after,
+.safeActive--opened::after {
   -webkit-transform: rotate(180deg);
           transform: rotate(180deg);
+  position: absolute;
+  top: 10px;
+  left: 634px;
 }
 
 .workActive--opened ~ .faqs__description {
   display: block;
-}
-
-.safeActive--opened {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  width: 650px;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  margin-bottom: 24px;
-}
-
-.safeActive--opened::after {
-  display: inline-block;
-  width: 18.5px;
-  height: 12px;
-  background-image: url(../img/faqs-button.svg);
-  -webkit-transform: rotate(180deg);
-          transform: rotate(180deg);
-}
-
-.safeActive--opened {
-  -webkit-animation: to-top 1.4s;
-          animation: to-top 1.4s;
 }
 
 .safeActive--opened ~ .faqs__description {
@@ -2210,7 +2170,13 @@ footer {
   .faqs__safe-item:last-child {
     margin-bottom: 0;
   }
-  .faqs__button,
+  .faqs__button {
+    position: relative;
+  }
+  .faqs__button::after {
+    position: absolute;
+    left: 601px;
+  }
   .faqs__description {
     width: 617px;
   }
@@ -2246,10 +2212,14 @@ footer {
     letter-spacing: -1.07143px;
   }
   .faqs__button {
-    width: 251px;
+    width: 219px;
     font-size: 18px;
     line-height: 24px;
     letter-spacing: -0.803571px;
+    position: relative;
+  }
+  .faqs__button::after {
+    left: 235px;
   }
   .faqs__description {
     width: 251px;
