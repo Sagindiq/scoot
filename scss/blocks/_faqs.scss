@@ -27,7 +27,7 @@
 .work__title,
 .safe__title {
     letter-spacing: -1.78571px;
-    @include space-mono (bold, 40px, 48px, #495567);
+    @include space-mono (bold, 40px, 48px, $black-accent);
 }
 
 .faqs__work-item,
@@ -42,6 +42,11 @@
     &:last-child {
         margin-bottom: 0;
     }
+
+    &:hover {
+        cursor: pointer;
+        background-color: #FFF4DF;
+    }
 }
 
 
@@ -49,7 +54,7 @@
     @include space-mono (bold, 24px, 28px, $black-accent);
     display: block;
     text-align: left;
-    background-color: #F2F5F9;
+    background-color: transparent;
     border: none;
     position: relative;
 
@@ -63,13 +68,17 @@
         top: 10px;
         left: 634px;
     }
+
+    &:hover {
+        cursor: pointer;
+    }
 }
 
 .faqs__description {
     @include lexend-deca (normal, 15px, 25px, $black-accent);
     display: none;
     width: 650px;
-    background-color: #F2F5F9;
+    background-color: transparent;
 }
 
 .workActive--opened,

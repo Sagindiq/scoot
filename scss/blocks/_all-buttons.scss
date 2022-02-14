@@ -1,8 +1,7 @@
 .every-button {
-    width: 181px;
-    height: 53px;
+    width: 185px;
     background-color: $yellow-accent;
-    border: 1px solid $yellow-accent;
+    border: 3px solid $yellow-accent;
     @include space-mono (bold, 15px, 25px, #fff);
     padding: 14px 39px;
     box-sizing: border-box;
@@ -10,10 +9,9 @@
 
 .every-button:hover {
     display: block;
-    width:181px;
-    height: 53px;
+    width: 185px;
     cursor: pointer;
-    background-color:#fff;
+    background-color: transparent;
     color: $yellow-accent;
     padding: 14px 39px;
     transition: 0.5s all;

@@ -99,10 +99,9 @@ footer {
 }
 
 .every-button {
-  width: 181px;
-  height: 53px;
+  width: 185px;
   background-color: #FCB72B;
-  border: 1px solid #FCB72B;
+  border: 3px solid #FCB72B;
   font-family: 'Space Mono', monospace;
   font-weight: bold;
   font-size: 15px;
@@ -115,10 +114,9 @@ footer {
 
 .every-button:hover {
   display: block;
-  width: 181px;
-  height: 53px;
+  width: 185px;
   cursor: pointer;
-  background-color: #fff;
+  background-color: transparent;
   color: #FCB72B;
   padding: 14px 39px;
   -webkit-transition: 0.5s all;
@@ -253,7 +251,7 @@ footer {
           transform: translate(-50%, -50%) rotate(-45deg);
 }
 
-@media only screen and (max-width: 766.99px) {
+@media only screen and (max-width: 768px) {
   header {
     margin: 0 auto;
     padding: 0;
@@ -472,7 +470,7 @@ footer {
   }
 }
 
-@media only screen and (max-width: 766.99px) {
+@media only screen and (max-width: 768px) {
   .intro__container::after,
   .intro__container::before {
     display: none !important;
@@ -489,7 +487,7 @@ footer {
   }
 }
 
-@media only screen and (max-width: 766.99px) and (-webkit-min-device-pixel-ratio: 2), only screen and (max-width: 766.99px) and (min--moz-device-pixel-ratio: 2), only screen and (max-width: 766.99px) and (min-device-pixel-ratio: 2), only screen and (max-width: 766.99px) and (min-resolution: 192dpi), only screen and (max-width: 766.99px) and (min-resolution: 2dppx) {
+@media only screen and (max-width: 768px) and (-webkit-min-device-pixel-ratio: 2), only screen and (max-width: 768px) and (min--moz-device-pixel-ratio: 2), only screen and (max-width: 768px) and (min-device-pixel-ratio: 2), only screen and (max-width: 768px) and (min-resolution: 192dpi), only screen and (max-width: 768px) and (min-resolution: 2dppx) {
   .intro {
     background-image: url(../img/intro-mobile@2x.jpg);
     background-size: cover;
@@ -497,7 +495,7 @@ footer {
   }
 }
 
-@media only screen and (max-width: 766.99px) {
+@media only screen and (max-width: 768px) {
   .intro__content {
     padding: 0;
     width: 311px;
@@ -694,7 +692,7 @@ footer {
   }
 }
 
-@media only screen and (max-width: 766.99px) {
+@media only screen and (max-width: 768px) {
   .guide__list::before {
     display: none;
   }
@@ -1020,7 +1018,12 @@ footer {
   }
 }
 
-@media only screen and (max-width: 766.99px) {
+.benefits__img {
+  width: 445px;
+  height: 445px;
+}
+
+@media only screen and (max-width: 768px) {
   .circle,
   .circle-left {
     display: none;
@@ -1230,7 +1233,7 @@ footer {
   }
 }
 
-@media only screen and (max-width: 766.99px) {
+@media only screen and (max-width: 768px) {
   .cta__circle {
     display: none;
   }
@@ -1392,7 +1395,7 @@ footer {
   }
 }
 
-@media only screen and (max-width: 766.99px) {
+@media only screen and (max-width: 768px) {
   footer {
     width: 100%;
   }
@@ -1491,7 +1494,7 @@ footer {
   }
 }
 
-@media only screen and (max-width: 766.99px) {
+@media only screen and (max-width: 768px) {
   .about-intro {
     width: 100%;
     background-image: url(../../img/about-intro-mobile.jpg);
@@ -1501,14 +1504,14 @@ footer {
   }
 }
 
-@media only screen and (max-width: 766.99px) and (-webkit-min-device-pixel-ratio: 2), only screen and (max-width: 766.99px) and (min--moz-device-pixel-ratio: 2), only screen and (max-width: 766.99px) and (min-device-pixel-ratio: 2), only screen and (max-width: 766.99px) and (min-resolution: 192dpi), only screen and (max-width: 766.99px) and (min-resolution: 2dppx) {
+@media only screen and (max-width: 768px) and (-webkit-min-device-pixel-ratio: 2), only screen and (max-width: 768px) and (min--moz-device-pixel-ratio: 2), only screen and (max-width: 768px) and (min-device-pixel-ratio: 2), only screen and (max-width: 768px) and (min-resolution: 192dpi), only screen and (max-width: 768px) and (min-resolution: 2dppx) {
   .about-intro {
     background-image: url(../img/about-intro-mobile@2x.jpg);
     /* Retina-specific stuff here */
   }
 }
 
-@media only screen and (max-width: 766.99px) {
+@media only screen and (max-width: 768px) {
   .about-intro__container {
     width: 341px;
     margin-left: auto;
@@ -1757,7 +1760,7 @@ footer {
   }
 }
 
-@media only screen and (max-width: 766.99px) {
+@media only screen and (max-width: 768px) {
   .circle,
   .circle-left {
     display: none;
@@ -1948,7 +1951,7 @@ footer {
   }
 }
 
-@media only screen and (max-width: 766.99px) {
+@media only screen and (max-width: 768px) {
   .values__container {
     margin-top: 120px;
     width: 341px;
@@ -2080,6 +2083,12 @@ footer {
   margin-bottom: 0;
 }
 
+.faqs__work-item:hover,
+.faqs__safe-item:hover {
+  cursor: pointer;
+  background-color: #FFF4DF;
+}
+
 .faqs__button {
   font-family: 'Space Mono', monospace;
   font-weight: bold;
@@ -2088,7 +2097,7 @@ footer {
   color: #495567;
   display: block;
   text-align: left;
-  background-color: #F2F5F9;
+  background-color: transparent;
   border: none;
   position: relative;
 }
@@ -2104,6 +2113,10 @@ footer {
   left: 634px;
 }
 
+.faqs__button:hover {
+  cursor: pointer;
+}
+
 .faqs__description {
   font-family: 'Lexend Deca', sans-serif;
   font-weight: normal;
@@ -2112,7 +2125,7 @@ footer {
   color: #495567;
   display: none;
   width: 650px;
-  background-color: #F2F5F9;
+  background-color: transparent;
 }
 
 .workActive--opened,
@@ -2183,7 +2196,7 @@ footer {
   }
 }
 
-@media only screen and (max-width: 766.99px) {
+@media only screen and (max-width: 768px) {
   .faqs__container {
     width: 341px;
     margin-left: auto;
