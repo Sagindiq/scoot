@@ -294,11 +294,11 @@ footer {
   }
   .header__nav {
     display: none;
-    height: calc(100vh - 55px);
+    height: calc(100vh - 59px);
     margin-right: auto;
     background: #2C2830;
     width: 70%;
-    padding: 64px 32px 42px 32px;
+    padding: 64px 32px 32px 32px;
     position: absolute;
     left: 0;
     top: 100%;
