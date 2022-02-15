@@ -298,7 +298,7 @@ footer {
     margin-right: auto;
     background: #2C2830;
     width: 70%;
-    padding: 64px 32px 32px 32px;
+    padding: 64px 32px 42px 32px;
     position: absolute;
     left: 0;
     top: 100%;
@@ -306,6 +306,9 @@ footer {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     -webkit-box-align: stretch;
         -ms-flex-align: stretch;
             align-items: stretch;
