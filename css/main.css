@@ -1188,7 +1188,6 @@ footer {
 
 .cta__circle::after {
   display: inline-block;
-  position: absolute;
   width: 347px;
   height: 347px;
   background: #E5ECF4;
@@ -1199,7 +1198,7 @@ footer {
   content: '';
   position: absolute;
   top: -20px;
-  right: 800px;
+  right: 850px;
 }
 
 @media only screen and (max-width: 1136px) {
@@ -1244,6 +1243,11 @@ footer {
   }
   .cta__circle::before {
     position: absolute;
+  }
+  .cta__circle::after {
+    position: absolute;
+    top: -20px;
+    right: 800px;
   }
 }
 
@@ -1323,7 +1327,7 @@ footer {
     content: '';
     position: absolute;
     top: -19px;
-    right: 400px;
+    right: 395px;
   }
 }
 

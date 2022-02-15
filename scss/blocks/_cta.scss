@@ -54,7 +54,6 @@
 
 .cta__circle::after {
     display: inline-block;
-    position: absolute;
     width: 347px;
     height: 347px;
 
@@ -66,7 +65,7 @@
 
     position: absolute;
     top: -20px;
-    right: 800px;
+    right: 850px;
 }
 
 @media only screen and (max-width: $tablet) {
@@ -118,6 +117,12 @@
         &::before {
             position: absolute;
         }
+
+        &::after {
+            position: absolute;
+            top: -20px;
+            right: 800px;
+        }
     }
 }
 
@@ -125,6 +130,7 @@
     .cta__circle {
         display: none;
     }
+
     .cta {
         height: 320px;
         width: 100%;
@@ -192,20 +198,20 @@
     }
 
     .cta__circle::after {
-    display: inline-block;
-    position: absolute;
-    width: 347px;
-    height: 347px;
+        display: inline-block;
+        position: absolute;
+        width: 347px;
+        height: 347px;
 
-    background: #E5ECF4;
-    mix-blend-mode: normal;
-    transform: matrix(-1, 0, 0, 1, 0, 0);
-    border-radius: 50%;
-    content: '';
+        background: #E5ECF4;
+        mix-blend-mode: normal;
+        transform: matrix(-1, 0, 0, 1, 0, 0);
+        border-radius: 50%;
+        content: '';
 
-    position: absolute;
-    top: -19px;
-    right: 400px;
-}
+        position: absolute;
+        top: -19px;
+        right: 395px;
+    }
 
 }
