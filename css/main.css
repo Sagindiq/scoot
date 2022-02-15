@@ -99,7 +99,9 @@ footer {
 }
 
 .all-buttons {
-  width: 185px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
   background-color: #FCB72B;
   border: 3px solid #FCB72B;
   font-family: 'Space Mono', monospace;
@@ -107,18 +109,21 @@ footer {
   font-size: 15px;
   line-height: 25px;
   color: #fff;
-  padding: 14px 39px;
+  padding: 14px 35px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  display: block;
 }
 
 .all-buttons:hover {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
   display: block;
-  width: 185px;
   cursor: pointer;
   background-color: transparent;
   color: #FCB72B;
-  padding: 14px 39px;
+  padding: 14px 35px;
   -webkit-transition: 0.5s all;
   transition: 0.5s all;
   -webkit-box-sizing: border-box;
@@ -158,10 +163,13 @@ footer {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .header__logo {
-  margin-right: 58px;
+  margin-right: 58.18px;
   width: 107px;
   height: 28px;
 }
@@ -268,10 +276,6 @@ footer {
   }
   .header__button {
     display: block;
-    margin-top: 339px;
-    width: 192px;
-    margin-left: auto;
-    margin-right: auto;
   }
   .header-logo-link {
     width: 75.5px;
@@ -290,14 +294,14 @@ footer {
   }
   .header__nav {
     display: none;
-    height: 618.1px;
+    height: calc(100vh - 59px);
     margin-right: auto;
     background: #2C2830;
     width: 70%;
-    padding: 40px 24px;
+    padding: 64px 32px 32px 32px;
     position: absolute;
     left: 0;
-    top: 72px;
+    top: 100%;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -305,6 +309,18 @@ footer {
     -webkit-box-align: stretch;
         -ms-flex-align: stretch;
             align-items: stretch;
+    z-index: 2;
+  }
+  .nav-shadow {
+    display: none;
+    width: 100%;
+    height: calc(100vh - 59px);
+    background: #000000;
+    mix-blend-mode: normal;
+    opacity: 0.75;
+    position: absolute;
+    left: 0;
+    top: 100%;
   }
   .header__list {
     display: block;
@@ -319,16 +335,21 @@ footer {
     font-size: 20px;
     line-height: 40px;
     letter-spacing: 1.36364px;
-    color: #fff;
-    text-align: center;
+    color: #E5ECF4;
+    text-align: left;
   }
   .header__nav--opened {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-animation: to-right 0.7s both;
-            animation: to-right 0.7s both;
-    z-index: 1;
+    -webkit-animation: to-right 0.6s both;
+            animation: to-right 0.6s both;
+  }
+  .header__nav--opened ~ .nav-shadow {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    z-index: -2;
   }
   @-webkit-keyframes to-right {
     from {
@@ -416,6 +437,9 @@ footer {
 }
 
 .intro__button {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
   margin-left: 95px;
 }
 
@@ -457,7 +481,9 @@ footer {
     margin-bottom: 32px;
   }
   .intro__button {
-    width: 185px;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
     margin: 0 auto;
   }
   .intro__container::after {
@@ -516,7 +542,9 @@ footer {
     text-align: center;
   }
   .intro__button {
-    width: 185px;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
     margin: 0 auto;
   }
   .intro__container::before {
@@ -533,6 +561,9 @@ footer {
 
 .guide {
   margin-top: 160px;
+}
+
+.guide__container {
   position: relative;
 }
 
@@ -554,9 +585,9 @@ footer {
   display: flex;
   z-index: -2;
   position: absolute;
-  width: 67.63%;
+  width: 974px;
   height: 1px;
-  left: 0;
+  left: -206px;
   top: 41px;
   border-bottom: 15px solid #E5ECF4;
   content: '';
@@ -988,6 +1019,9 @@ footer {
     margin-top: 40px;
   }
   .benefits__button {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
     margin-top: 40px;
   }
   .benefits__item--use::after {
@@ -1054,6 +1088,9 @@ footer {
     letter-spacing: -1.42857px;
   }
   .benefits__button {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
     margin-top: 32px;
   }
   .benefits__item--use {
@@ -1766,6 +1803,9 @@ footer {
     letter-spacing: -1.42857px;
   }
   .benefits__button {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
     margin-top: 32px;
   }
   .benefits__item--phone {

@@ -1,11 +1,11 @@
 .guide {
     margin-top: 160px;
-    position: relative;
 }
 
-// .guide__container {
-//     overflow: hidden;
-// }
+
+.guide__container {
+    position: relative;
+}
 
 .guide__list {
     display: flex;
@@ -16,10 +16,10 @@
         display: flex;
         z-index: -2;
         position: absolute;
-        width: 67.63%;
+        width: 974px;
         // 974px ni foizi 67%
         height: 1px;
-        left: 0;
+        left: -206px;
         top: 41px;
         border-bottom: 15px solid #E5ECF4;
         content: '';
