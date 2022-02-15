@@ -1,6 +1,3 @@
-.benefits {
-    overflow: hidden;
-}
 
 .benefits__container {
     margin-top: 200px;
@@ -129,13 +126,6 @@
 
 @media only screen and (max-width: $tablet) {
 
-    .benefits {
-        max-width: 768px;
-        margin-left: auto;
-        margin-right: auto;
-        overflow: hidden;
-    }
-
     .benefits__container {
         max-width: 603px;
         margin-top: 145px;
@@ -240,15 +230,6 @@
     .circle,
     .circle-left {
         display: none;
-    }
-
-    .benefits {
-        width: 375px;
-        margin-left: auto;
-        margin-right: auto;
-        overflow: hidden;
-
-        // benefits ga width berganimni sababi 375px dan keyin strelka svg qirqilishi uchun berdim yani overflow kereli joyda strelkani qirqishi uchun
     }
 
     .benefits__container {

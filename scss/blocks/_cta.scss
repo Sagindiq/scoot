@@ -73,15 +73,16 @@
 
     .cta {
         height: 300px;
+        overflow: hidden;
     }
 
-    .cta__overflow {
-        width: 768px;
-        height: 300px;
-        margin-left: auto;
-        margin-right: auto;
-        overflow: hidden;  // for overflow hidden
-    }
+    // .cta__overflow {
+    //     width: 768px;
+    //     height: 300px;
+    //     margin-left: auto;
+    //     margin-right: auto;
+    //     overflow: hidden;  // for overflow hidden
+    // }
 
     .cta__container {
         width: 487px;
@@ -131,18 +132,17 @@
         position: relative !important;
     }
 
-    .cta__overflow {
-        width: 418px;
-        height: 320px;
-        margin-left: auto;
-        margin-right: auto;
-        overflow: hidden;  // for overflow hidden
-    }
+    // .cta__overflow {
+    //     width: 418px;
+    //     height: 320px;
+    //     margin-left: auto;
+    //     margin-right: auto;
+    // }
 
     .cta__container {
         width: 311px;
-        margin-left: 22px;
-        margin-right: 32px;
+        margin-left: auto;
+        margin-right: auto;
         padding: 0 15px;
         display: flex;
         flex-direction: column;
