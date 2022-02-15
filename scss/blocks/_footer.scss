@@ -19,7 +19,6 @@
 .footer__item a {
     display: block;
     @include space-mono (700, 15px, 25px, $accent);
-
     &:hover {
         color: $yellow-accent;
     }
@@ -35,6 +34,8 @@
 
 .footer__social-link {
     color: $yellow-accent;
+    width: 24px;
+    height: 24px;
 
     &:hover {
         color: #fff;

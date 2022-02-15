@@ -1388,6 +1388,8 @@ footer {
 
 .footer__social-link {
   color: #FCB72B;
+  width: 24px;
+  height: 24px;
 }
 
 .footer__social-link:hover {
