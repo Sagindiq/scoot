@@ -602,45 +602,29 @@ footer {
   position: relative;
 }
 
-.guide--app::before {
+.guide__item::before {
   display: inline-block;
   width: 96px;
   height: 96px;
-  background-image: url(../img/app.svg);
-  background-repeat: no-repeat;
-  background-position: center center;
+  background: #FCB72B no-repeat center center;
   border-radius: 50%;
-  background-color: #FCB72B;
+  padding: 24px 32.80px 24px 29px;
+  margin-bottom: 40px;
+}
+
+.guide--app::before {
+  background-image: url(../img/app.svg);
   content: '';
 }
 
 .guide--scooter::before {
-  display: inline-block;
-  width: 96px;
-  height: 96px;
   background-image: url(../img/scooter.svg);
-  background-repeat: no-repeat;
-  background-position: center center;
-  border-radius: 50%;
-  background-color: #FCB72B;
   content: '';
 }
 
 .guide--ride::before {
-  display: inline-block;
-  width: 96px;
-  height: 96px;
   background-image: url(../img/ride.svg);
-  background-repeat: no-repeat;
-  background-position: center center;
-  border-radius: 50%;
-  background-color: #FCB72B;
   content: '';
-}
-
-.guide__item::before {
-  padding: 24px 32.80px 24px 29px;
-  margin-bottom: 40px;
 }
 
 .guide__title {
@@ -708,7 +692,8 @@ footer {
     margin: 0 79px 0 0;
     width: 96px;
     height: 96px;
-    padding: 24px 48px;
+    -ms-flex-negative: 0;
+        flex-shrink: 0;
   }
   .guide__content {
     display: -webkit-box;
@@ -845,6 +830,13 @@ footer {
   display: none;
 }
 
+.benefits__item::after {
+  width: 734px;
+  height: 150px;
+  content: '';
+  position: absolute;
+}
+
 .benefits__item--use {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -891,13 +883,10 @@ footer {
 }
 
 .benefits__item--city::after {
-  display: inline-block;
-  width: 734px;
-  height: 150px;
-  background-image: url(../img/vector-right.svg);
-  content: '';
-  position: absolute;
+  background-image: url(../../img/vector-left.svg);
   left: -550px;
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
   top: 0;
 }
 
@@ -919,12 +908,7 @@ footer {
 }
 
 .benefits__item--payment::after {
-  display: inline-block;
-  width: 734px;
-  height: 150px;
   background-image: url(../img/vector-left.svg);
-  content: '';
-  position: absolute;
   right: -545px;
   top: 77px;
 }

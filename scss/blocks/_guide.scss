@@ -30,51 +30,35 @@
     width: 350px;
     margin-right: auto;
     position: relative;
+
+    &::before {
+        display: inline-block;
+        width: 96px;
+        height: 96px;
+        background: $yellow-accent no-repeat center center;
+        border-radius: 50%;
+        padding: 24px 32.80px 24px 29px;
+        margin-bottom: 40px;
+    }
 }
 
 .guide--app::before {
-    display: inline-block;
-    width: 96px;
-    height: 96px;
     background-image: url(../img/app.svg);
-    background-repeat: no-repeat;
-    background-position: center center;
-    border-radius: 50%;
-    background-color: $yellow-accent;
     content: '';
 }
 
 .guide--scooter::before {
-    display: inline-block;
-    width: 96px;
-    height: 96px;
     background-image: url(../img/scooter.svg);
-    background-repeat: no-repeat;
-    background-position: center center;
-    border-radius: 50%;
-    background-color: $yellow-accent;
     content: '';
 }
 
 .guide--ride::before {
-    display: inline-block;
-    width: 96px;
-    height: 96px;
     background-image: url(../img/ride.svg);
-    background-repeat: no-repeat;
-    background-position: center center;
-    border-radius: 50%;
-    background-color: $yellow-accent;
     content: '';
 }
 
-.guide__item::before {
-    padding: 24px 32.80px 24px 29px;
-    margin-bottom: 40px;
-}
-
 .guide__title {
-    font-family:'Space Mono', monospace;
+    font-family: 'Space Mono', monospace;
     font-weight: 700;
     color: #495567;
     font-size: 24px;
@@ -133,7 +117,7 @@
         margin: 0 79px 0 0;
         width: 96px;
         height: 96px;
-        padding: 24px 48px;
+        flex-shrink: 0;
     }
 
     .guide__content {
