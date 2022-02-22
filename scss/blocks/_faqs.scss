@@ -19,8 +19,8 @@
     justify-content: space-between;
 }
 
-.work__title,
-.safe__title {
+.faqs__work-title,
+.faqs__safe-title {
     letter-spacing: -1.78571px;
     @include space-mono (bold, 40px, 48px, $black-accent);
 }
@@ -52,7 +52,7 @@
     background-color: transparent;
     border: none;
     position: relative;
-    // width: 100%;
+    width: 100%;
 
     &::after {
         display: inline-block;
@@ -116,8 +116,8 @@
         flex-direction: column;
     }
 
-    .work__title,
-    .safe__title {
+    .faqs__work-title,
+    .faqs__safe-title {
         text-align: center;
         letter-spacing: -1.78571px;
         margin-bottom: 32px;
@@ -174,8 +174,8 @@
         }
     }
 
-    .work__title,
-    .safe__title {
+    .faqs__work-title,
+    .faqs__safe-title {
         font-size: 24px;
         line-height: 28px;
         letter-spacing: -1.07143px;

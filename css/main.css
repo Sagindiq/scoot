@@ -612,17 +612,17 @@ footer {
   margin-bottom: 40px;
 }
 
-.guide--app::before {
+.guide__item--app::before {
   background-image: url(../img/app.svg);
   content: '';
 }
 
-.guide--scooter::before {
+.guide__item--scooter::before {
   background-image: url(../img/scooter.svg);
   content: '';
 }
 
-.guide--ride::before {
+.guide__item--ride::before {
   background-image: url(../img/ride.svg);
   content: '';
 }
@@ -1870,15 +1870,15 @@ footer {
   border-radius: 50%;
 }
 
-.tech--item::before {
+.values__item--tech::before {
   content: '01';
 }
 
-.integrity--item::before {
+.values__item--integrity::before {
   content: '02';
 }
 
-.community--item::before {
+.values__item--community::before {
   content: '03';
 }
 
@@ -2051,8 +2051,8 @@ footer {
           justify-content: space-between;
 }
 
-.work__title,
-.safe__title {
+.faqs__work-title,
+.faqs__safe-title {
   letter-spacing: -1.78571px;
   font-family: 'Space Mono', monospace;
   font-weight: bold;
@@ -2093,6 +2093,7 @@ footer {
   background-color: transparent;
   border: none;
   position: relative;
+  width: 100%;
 }
 
 .faqs__button::after {
@@ -2163,8 +2164,8 @@ footer {
         -ms-flex-direction: column;
             flex-direction: column;
   }
-  .work__title,
-  .safe__title {
+  .faqs__work-title,
+  .faqs__safe-title {
     text-align: center;
     letter-spacing: -1.78571px;
     margin-bottom: 32px;
@@ -2214,8 +2215,8 @@ footer {
   .faqs__safe-item:last-child {
     margin-bottom: 0;
   }
-  .work__title,
-  .safe__title {
+  .faqs__work-title,
+  .faqs__safe-title {
     font-size: 24px;
     line-height: 28px;
     letter-spacing: -1.07143px;

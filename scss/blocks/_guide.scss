@@ -42,17 +42,17 @@
     }
 }
 
-.guide--app::before {
+.guide__item--app::before {
     background-image: url(../img/app.svg);
     content: '';
 }
 
-.guide--scooter::before {
+.guide__item--scooter::before {
     background-image: url(../img/scooter.svg);
     content: '';
 }
 
-.guide--ride::before {
+.guide__item--ride::before {
     background-image: url(../img/ride.svg);
     content: '';
 }

@@ -36,13 +36,13 @@
     border-radius: 50%;
 }
 
-.tech--item::before {
+.values__item--tech::before {
     content: '01';
 }
-.integrity--item::before {
+.values__item--integrity::before {
     content: '02';
 }
-.community--item::before {
+.values__item--community::before {
     content: '03';
 }
 
