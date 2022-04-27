@@ -7,20 +7,12 @@ burger.addEventListener("click", function() {
   nav.classList.toggle("header__nav--opened");
 })
 
-// active button in faqs work
-const faqsWork = document.querySelector(".workActive");
-const faqsWorkD = document.querySelector(".faqs__description")
+const faqsButton = document.querySelectorAll(".faqs__button");
+const faqsDesc = document.querySelector(".faqs__description");
 
-faqsWork.addEventListener("click", function() {
-  faqsWork.classList.toggle("workActive--opened");
-  faqsWorkD.classList.toggle("faqs__description--opened");
-})
-
-// active button in faqs safe
-const faqsSafe = document.querySelector(".safeActive");
-const faqsSAfed = document.querySelector(".faqs__description")
-
-faqsSafe.addEventListener("click", function() {
-  faqsSafe.classList.toggle("safeActive--opened");
-  faqsSAfed.classList.toggle("faqs__description--opened");
+const faqs = faqsButton.forEach( (button) => {
+  button.addEventListener("click", function(evt){
+    button.classList.toggle("faqs__button--opened");
+    faqsDesc.classList.toggle("faqs__description--opened");
+  })
 })

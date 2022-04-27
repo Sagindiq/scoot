@@ -2122,15 +2122,13 @@ footer {
   background-color: transparent;
 }
 
-.workActive--opened,
-.safeActive--opened {
+.faqs__button--opened {
   display: block;
   margin-bottom: 24px;
   position: relative;
 }
 
-.workActive--opened::after,
-.safeActive--opened::after {
+.faqs__button--opened::after {
   -webkit-transform: rotate(180deg);
           transform: rotate(180deg);
   position: absolute;
@@ -2138,12 +2136,8 @@ footer {
   left: 634px;
 }
 
-.workActive--opened ~ .faqs__description {
-  display: block;
-}
-
-.safeActive--opened ~ .faqs__description {
-  display: block;
+.faqs__button--opened ~ .faqs__description {
+  display: inline-block;
 }
 
 @media only screen and (max-width: 1136px) {
